@@ -67,7 +67,7 @@ gulp.task('build-css', function() {
 
 // Imagemin images and ouput them in dist
 gulp.task('imagemin', function() {
-    gulp.src(paths.images, {
+    return gulp.src(paths.images, {
             cwd: bases.dev,
             base: bases.dev + 'images/'
         })

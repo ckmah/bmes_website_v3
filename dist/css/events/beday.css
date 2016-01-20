@@ -1,6 +1,0 @@
-.item:nth-child(1) {
-  background-image: url("/images/overlay.png"), url("/images/beday1.jpg") !important;
-}
-.item:nth-child(2) {
-  background-image: url("/images/overlay.png"), url("/images/beday2.jpg") !important;
-}
