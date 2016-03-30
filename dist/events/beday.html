@@ -10,8 +10,8 @@
   <meta name="author" content="Clarence Mah">
   <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="/css/bootstrap-theme.min.css">
-  <link rel="stylesheet" type="text/css" href="/css/events.css">
-  <script type="text/javascript" src="/js/smooth-scroll.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/css/events_subpages.css">
+  <link rel="stylesheet" type="text/css" href="/css/events/beday.css">
   <script>
   (function(i, s, o, g, r, a, m) {
     i['GoogleAnalyticsObject'] = r;
@@ -109,114 +109,62 @@
         <li class="dropdown">
           <a href="/contact.html" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-expanded="false">
           Contact
+          <span class="caret"></span>
           </a>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="/contact/officers.html">Officers</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="/contact/affiliates.html">Affiliates</a>
+            </li>
+          </ul>
         </li>
       </ul>
     </div>
     <!-- /.navbar-collapse -->
   </nav>
-  <div class="jumbotron intro">
-    <div class="container intro-text vertical-center">
-      <h1>
-        Events
-        </h1>
-      <h4>
-      Social & Professional
-        </h4>
-    </div>
-    <a class="scroll-next" data-scroll href="#content"><span class="glyphicon glyphicon-chevron-down"></span></a>
-  </div>
-  <section id="content">
-    <div id="cd-timeline" class="container">
-      <div class="cd-timeline-line"></div>
-      <div class="cd-timeline-events">
-        <div class="cd-timeline-block">
-        <div class="pointer"></div>
-          <div class="pointer"></div>
-          <div class="cd-timeline-img"></div>
-          <div class="cd-timeline-content card">
-            <h2>Bioengineering Day</h2>
-            <div class="scrim-top"></div>
-            <a href="/events/beday.html" class="cd-read-more">Read more</a>
-          </div>
-          <!-- cd-timeline-content -->
-        </div>
-        <!-- cd-timeline-block -->
-
-        <div class="cd-timeline-block">
-          <div class="pointer"></div>
-          <div class="cd-timeline-img"></div>
-          <div class="cd-timeline-content card">
-            <h2>Lab Expo</h2>
-            <div class="scrim-top"></div>
-            <a href="/events/labexpo.html" class="cd-read-more">Read more</a>
-          </div>
-          <!-- cd-timeline-content -->
-        </div>
-        <!-- cd-timeline-block -->
-
-        <div class="cd-timeline-block">
-          <div class="pointer"></div>
-          <div class="cd-timeline-img"></div>
-          <div class="cd-timeline-content card">
-            <h2>BE Inspired</h2>
-            <div class="scrim-top"></div>
-            <a href="/events/beinspired.html" class="cd-read-more">Read more</a>
-          </div>
-          <!-- cd-timeline-content -->
-        </div>
-        <!-- cd-timeline-block -->
-
-        <div class="cd-timeline-block">
-          <div class="pointer"></div>
-          <div class="cd-timeline-img"></div>
-          <div class="cd-timeline-content card">
-            <h2>Industry & Academia Panels</h2>
-            <div class="scrim-top"></div>
-            <a href="/events/panels.html" class="cd-read-more">Read more</a>
-          </div>
-          <!-- cd-timeline-content -->
-        </div>
-        <!-- cd-timeline-block -->
-
-        <div class="cd-timeline-block">
-          <div class="pointer"></div>
-          <div class="cd-timeline-img"></div>
-          <div class="cd-timeline-content card">
-            <h2>Translational Medicine</h2>
-            <div class="scrim-top"></div>
-            <a href="/events/translationalmedicine.html" class="cd-read-more">Read more</a>
-          </div>
-          <!-- cd-timeline-content -->
-        </div>
-        <!-- cd-timeline-block -->
-
-        <div class="cd-timeline-block">
-          <div class="pointer"></div>
-          <div class="cd-timeline-img"></div>
-          <div class="cd-timeline-content card">
-            <h2>Mentor Mentee Program</h2>
-            <div class="scrim-top"></div>
-            <a href="/events/mentormentee.html" class="cd-read-more">Read more</a>
-          </div>
-          <!-- cd-timeline-content -->
-        </div>
-        <!-- cd-timeline-block -->
-        <div class="cd-timeline-block">
-          <div class="pointer"></div>
-          <div class="cd-timeline-img"></div>
-          <div class="cd-timeline-content card">
-            <h2>Lunch by the Bear</h2>
-            <div class="scrim-top"></div>
-            <a href="/events/lunchbythebear.html" class="cd-read-more">Read more</a>
-          </div>
-          <!-- cd-timeline-content -->
-        </div>
-        <!-- cd-timeline-block -->
-
+  <div class="content">
+    <div id="committee-carousel" class="carousel slide" data-ride="carousel" data-pause="hover">
+      <div class="container intro-text">
+        <h2>Bioengineering Day</h2>
+        <p>Bioengineering day is a unique forum for networking between our industrial partners and the bioengineering community at UC San Diego. The undergraduate and graduate research symposia celebrate the accomplishments of our students and provide opportunities for collaboration between industry, alumni, faculty, and students. BE Day features a keynote speaker, a variety of graduate research presentations, a poster expo, an industry panel discussion, and a networking reception.</p>
       </div>
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#committee-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#committee-carousel" data-slide-to="1"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <div class="carousel-caption">
+            <p>Senior Design Showcase</p>
+            <p class="credits">photo: Michelle Ragsac</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="carousel-caption">
+            <p>Senior Design Showcase</p>
+            <p class="credits">photo: Michelle Ragsac</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#committee-carousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#committee-carousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
-  </section>
+  </div>
+
   <!--end content-->
   <div class="footer container">
     <div id="subscribe" class="input-group col-sm-5 pull-left">
@@ -235,9 +183,9 @@
   </div>
   <!--end footer-->
   <script src="http://localhost:35729/livereload.js"></script>
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/functions.js"></script>
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/functions.js"></script>
 </body>
 
 </html>

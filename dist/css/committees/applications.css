@@ -1,0 +1,3 @@
+.carousel-inner .item {
+  background-image: url("/images/overlay.png"), url("/images/lunchbythebear1.jpg");
+}

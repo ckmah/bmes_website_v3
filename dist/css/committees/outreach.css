@@ -1,0 +1,5 @@
+.carousel-inner .item {
+  background-image: url("/images/overlay.png"), url("/images/outreach1.jpg");
+  background-size: cover;
+  background-position: center top;
+}
