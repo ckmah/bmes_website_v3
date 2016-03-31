@@ -488,9 +488,6 @@ HOMEPAGE FORMATTING
   bottom: 15px;
   text-align: right;
 }
-.committee-list .item .item-inner:hover {
-  background: #e6e6e6;
-}
 .committee-list .item:nth-child(1) .img-container {
   background-image: url('/images/beday1.jpg');
 }
