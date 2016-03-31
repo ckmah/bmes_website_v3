@@ -6,7 +6,7 @@ HOMEPAGE FORMATTING
   TABLE OF CONTENTS
 
     START - main jumbotron
-    MAIN CONTENT - content-inner, committee items
+    MAIN CONTENT - event timeline, timeline content and images
 ***/
 /******************** START ********************/
 
@@ -16,15 +16,14 @@ HOMEPAGE FORMATTING
     height: 75vh;
   }
   text-align: center;
-  background: url("../images/overlay.png"), url("../images/committees.jpg");
+  background: url("../images/overlay.png"), url("../images/mentormentee2.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center top;
 }
-.content-inner {
-  padding: 0.5em;
-}
-// COMMITTEES ITEMS
-.committee-list {
+/******************** MAIN CONTENT ********************/
+
+// EVENT ITEMS
+.event-list {
   .item {
     padding: 0.7em;
     // item inner container
@@ -57,8 +56,12 @@ HOMEPAGE FORMATTING
       .item-info {
         position: relative;
         height: 350px;
-        padding: 1.5em 1em 1em;
+        padding: 1.5em 2em;
         white-space: normal;
+        h3 {
+          margin: 0.2em 0;
+          color: @gray-dark !important;
+        }
         h4 {
           margin: 0.2em 0;
           color: @gray-dark !important;
@@ -94,9 +97,6 @@ HOMEPAGE FORMATTING
     }
     &:nth-child(6) .img-container {
       background-image: url('/images/bemed1.jpg')
-    }
-    &:nth-child(7) .img-container {
-      background-image: url('/images/mtech.jpg')
     }
   }
 }

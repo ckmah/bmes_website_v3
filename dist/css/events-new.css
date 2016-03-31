@@ -415,27 +415,25 @@ HOMEPAGE FORMATTING
   TABLE OF CONTENTS
 
     START - main jumbotron
-    MAIN CONTENT - content-inner, committee items
+    MAIN CONTENT - event timeline, timeline content and images
 ***/
 /******************** START ********************/
 .intro {
   text-align: center;
-  background: url("../images/overlay.png"), url("../images/committees.jpg");
+  background: url("../images/overlay.png"), url("../images/mentormentee2.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center top;
 }
 @media (min-width: 768px) {
   .intro {
     height: 75vh;
   }
 }
-.content-inner {
-  padding: 0.5em;
-}
-.committee-list .item {
+/******************** MAIN CONTENT ********************/
+.event-list .item {
   padding: 0.7em;
 }
-.committee-list .item .item-inner {
+.event-list .item .item-inner {
   text-decoration: none;
   color: #808080;
   padding: 0;
@@ -445,7 +443,7 @@ HOMEPAGE FORMATTING
   -o-transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-.committee-list .item .item-inner .img-container {
+.event-list .item .item-inner .img-container {
   position: relative;
   overflow: hidden;
   padding: 0;
@@ -453,59 +451,60 @@ HOMEPAGE FORMATTING
   background-position: center;
   background-size: cover;
 }
-.committee-list .item .item-inner .img-container h3 {
+.event-list .item .item-inner .img-container h3 {
   color: white;
   z-index: 1;
   margin: 0.6em;
   position: absolute;
 }
-.committee-list .item .item-inner .img-container img {
+.event-list .item .item-inner .img-container img {
   padding: 0em;
   -webkit-transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
   -moz-transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
   -o-transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-.committee-list .item .item-inner .item-info {
+.event-list .item .item-inner .item-info {
   position: relative;
   height: 350px;
-  padding: 1.5em 1em 1em;
+  padding: 1.5em 2em;
   white-space: normal;
 }
-.committee-list .item .item-inner .item-info h4 {
+.event-list .item .item-inner .item-info h3 {
   margin: 0.2em 0;
   color: #4d4d4d !important;
 }
-.committee-list .item .item-inner .item-info p {
+.event-list .item .item-inner .item-info h4 {
+  margin: 0.2em 0;
+  color: #4d4d4d !important;
+}
+.event-list .item .item-inner .item-info p {
   max-height: 170px;
   overflow: auto;
   margin: 0;
 }
-.committee-list .item .item-inner .item-info .more {
+.event-list .item .item-inner .item-info .more {
   position: absolute;
   padding-top: 0.5em;
   color: #2196F3;
   bottom: 15px;
   text-align: right;
 }
-.committee-list .item:nth-child(1) .img-container {
+.event-list .item:nth-child(1) .img-container {
   background-image: url('/images/beday1.jpg');
 }
-.committee-list .item:nth-child(2) .img-container {
+.event-list .item:nth-child(2) .img-container {
   background-image: url('/images/labexpo1.jpg');
 }
-.committee-list .item:nth-child(3) .img-container {
+.event-list .item:nth-child(3) .img-container {
   background-image: url('/images/home1.jpg');
 }
-.committee-list .item:nth-child(4) .img-container {
+.event-list .item:nth-child(4) .img-container {
   background-image: url('/images/outreach1.jpg');
 }
-.committee-list .item:nth-child(5) .img-container {
+.event-list .item:nth-child(5) .img-container {
   background-image: url('/images/projectteam1.jpg');
 }
-.committee-list .item:nth-child(6) .img-container {
+.event-list .item:nth-child(6) .img-container {
   background-image: url('/images/bemed1.jpg');
-}
-.committee-list .item:nth-child(7) .img-container {
-  background-image: url('/images/mtech.jpg');
 }
