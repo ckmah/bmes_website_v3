@@ -359,6 +359,25 @@ a:hover {
 .officer-bubble:hover {
   background-color: #2196F3 !important;
 }
+.contact-bubble {
+  display: inline-block;
+  font-size: 16px;
+  background-color: #6ab8f7 !important;
+  color: white !important;
+  padding: 0.1em 0.5em;
+  margin: 0.3em 0;
+  background-color: white;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -moz-transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -o-transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.contact-bubble:hover {
+  background-color: #2196F3 !important;
+}
 /******************** FOOTER ********************/
 .footer {
   position: relative;
@@ -508,7 +527,7 @@ h3 {
 }
 .application-links .app .app-inner {
   padding: 1em;
-  padding-bottom: 2.5em;
+  padding-bottom: 0.25em;
   -webkit-transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
   -moz-transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
   -o-transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -519,19 +538,4 @@ h3 {
 }
 .application-links .app .app-inner h4 {
   color: black !important;
-}
-.application-links .app .app-inner .due-date {
-  float: right;
-  text-align: right;
-  white-space: nowrap;
-  display: inline-block;
-}
-.application-links .app .app-inner .due-date .due {
-  display: inline-block;
-  margin: 0;
-}
-.application-links .app .app-inner .due-date .date {
-  display: inline-block;
-  margin: 0;
-  color: #2196F3;
 }
