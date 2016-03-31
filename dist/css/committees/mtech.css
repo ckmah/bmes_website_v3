@@ -1,0 +1,10 @@
+.carousel-inner .item {
+  background-image: url("/images/overlay.png"), url("/images/mtech.jpg");
+  background-size: cover;
+  background-position: center top;
+}
+.related-events .item .item-inner {
+  background-image: url("/images/mtech.jpg");
+  background-size: cover;
+  background-position: center;
+}

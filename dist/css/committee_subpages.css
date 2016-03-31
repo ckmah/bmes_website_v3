@@ -527,7 +527,7 @@ h3 {
 }
 .application-links .app .app-inner {
   padding: 1em;
-  padding-bottom: 2.5em;
+  padding-bottom: 0.25em;
   -webkit-transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
   -moz-transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
   -o-transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -538,19 +538,4 @@ h3 {
 }
 .application-links .app .app-inner h4 {
   color: black !important;
-}
-.application-links .app .app-inner .due-date {
-  float: right;
-  text-align: right;
-  white-space: nowrap;
-  display: inline-block;
-}
-.application-links .app .app-inner .due-date .due {
-  display: inline-block;
-  margin: 0;
-}
-.application-links .app .app-inner .due-date .date {
-  display: inline-block;
-  margin: 0;
-  color: #2196F3;
 }
