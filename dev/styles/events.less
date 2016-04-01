@@ -22,241 +22,81 @@ HOMEPAGE FORMATTING
 }
 /******************** MAIN CONTENT ********************/
 
-// EVENT TIMELINE
-#cd-timeline {
-  position: relative !important;
-  margin: 0 auto;
-  overflow: hidden;
-  // outer timeline box
-  @media (min-width: 768px) {
-    &::before {
-      position: absolute;
-      left: 50%;
-      .transform(translateX(-50%));
-      background: @gray-light;
-      width: 4px;
-      height: 100%;
-    }
-    .cd-timeline-line {
-      position: absolute;
-      left: 50%;
-      .transform(translateX(-50%));
-      background: @gray-light;
-      width: 4px;
-      height: 100%;
-    }
-  }
-  // block including content and image
-  .cd-timeline-block {
-    position: relative;
-    margin: 2em 0;
-    &:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-    &:first-child {
-      margin-top: 2em;
-    }
-    &:last-child {
-      margin-bottom: 2em;
-    }
-    .pointer {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      margin-top: 11px;
-      margin-left: -60px;
-      width: 50px;
-      height: 8px;
-      background: white;
-      .drop-shadow(0, 2px, 2px, rgba(0, 0, 0, 0.15));
-    }
-    // even children move to right side
-    @media (min-width: 768px) {
-      &:nth-child(even) {
-        .cd-timeline-content {
-          float: right;
-          margin-left: 0;
-          width: 45%;
-          &::before {
-            top: 24px;
-            left: auto;
-            right: 100%;
-          }
-          .cd-read-more {
-            float: right;
-          }
-          .cd-date {
-            left: auto;
-            right: 122%;
-            text-align: right;
-          }
+// EVENT ITEMS
+.event-list {
+  .item {
+    padding: 0.7em;
+    // item inner container
+    .item-inner {
+      text-decoration: none;
+      color: @p-color;
+      padding: 0;
+      overflow: hidden;
+      .ease-out-cubic;
+      // image container
+      .img-container {
+        position: relative;
+        overflow: hidden;
+        padding: 0;
+        height: 350px;
+        background-position: center;
+        background-size: cover;
+        h3 {
+          color: white;
+          z-index: 1;
+          margin: 0.6em;
+          position: absolute;
         }
-
-        // line connecting image to content
-        .pointer {
-          margin-left: 15px;
+        img {
+          padding: 0em;
+          .ease-out-cubic;
         }
       }
-
-      &:nth-child(1) {
-        .cd-timeline-content {
-          background-image: url("/images/overlay_white.png"), url("/images/beday2.jpg");
-          background-size: cover;
-
-          &:hover {
-            background-image: url("/images/beday2.jpg") !important;
-          }
+      // item info text
+      .item-info {
+        position: relative;
+        height: 350px;
+        padding: 1.5em 2em;
+        white-space: normal;
+        h3 {
+          margin: 0.2em 0;
+          color: @gray-dark !important;
         }
-        .cd-timeline-img {
-          background-color: @blue;
+        h4 {
+          margin: 0.2em 0;
+          color: @gray-dark !important;
         }
-      }
-      &:nth-child(2) {
-        .cd-timeline-content {
-          background-image: url("/images/overlay_white.png"), url("/images/labexpo2.jpg");
-          background-size: cover;
-
-          &:hover {
-            background-image: url("/images/labexpo2.jpg") !important;
-          }
+        p {
+          max-height: 170px;
+          overflow: auto;
+          margin: 0;
         }
-        .cd-timeline-img {
-          background-color: @green;
-        }
-      }
-      &:nth-child(3) {
-        .cd-timeline-content {
-          background-image: url("/images/overlay_white.png"), url("/images/beinspired2.jpg");
-          background-size: cover;
-
-          &:hover {
-            background-image: url("/images/beinspired2.jpg") !important;
-          }
-        }
-        .cd-timeline-img {
-          background-color: @purple;
-        }
-      }
-      &:nth-child(4) {
-        .cd-timeline-content {
-          background-image: url("/images/overlay_white.png"), url("/images/panels2.jpg");
-          background-size: cover;
-
-          &:hover {
-            background-image: url("/images/panels2.jpg") !important;
-          }
-        }
-        .cd-timeline-img {
-          background-color: @orange;
-        }
-      }
-      &:nth-child(5) {
-        .cd-timeline-content {
-          background-image: url("/images/overlay_white.png"), url("/images/bemed1.jpg");
-          background-size: cover;
-
-          &:hover {
-            background-image: url("/images/bemed1.jpg") !important;
-          }
-        }
-        .cd-timeline-img {
-          background-color: @red;
-        }
-      }
-      &:nth-child(6) {
-        .cd-timeline-content {
-          background-image: url("/images/overlay_white.png"), url("/images/mentormentee2.jpg");
-          background-size: cover;
-
-          &:hover {
-            background-image: url("/images/mentormentee2.jpg") !important;
-          }
-        }
-        .cd-timeline-img {
-          background-color: @blue;
-        }
-      }
-      &:nth-child(7) {
-        .cd-timeline-content {
-          background-image: url("/images/overlay_white.png"), url("/images/beday1.jpg");
-          background-size: cover;
-
-          &:hover {
-            background-image: url("/images/beday1.jpg") !important;
-          }
-        }
-        .cd-timeline-img {
-          background-color: @green;
+        .more {
+          position: absolute;
+          padding-top: 0.5em;
+          color: @blue;
+          bottom: 15px;
+          text-align: right;
         }
       }
     }
-  }
-  // timeline content
-  .cd-timeline-content {
-    position: relative;
-    margin: 0 auto;
-    padding: 1em;
-    width: 95%;
-    .ease-out-cubic(0.3s);
-
-    h2 {
-      position: relative;
-      color: black !important;
-      margin-top: 0.2em;
-      margin-bottom: 0.5em;
-      z-index: 2;
+    &:nth-child(1) .img-container {
+      background-image: url('/images/beday1.jpg')
     }
-
-    // header scrim hidden, appears on hover
-    .scrim-top {
-      opacity: 0;
+    &:nth-child(2) .img-container {
+      background-image: url('/images/labexpo1.jpg')
     }
-
-    @media (min-width: 768px) {
-      width: 45%;
-      margin: 0;
-
-      &:hover {
-        padding-bottom: 200px;
-
-        // header scrim hidden, appears on hover
-        .scrim-top {
-          opacity: 1;
-        }
-
-        h2 {
-          color: white !important;
-        }
-
-        .cd-read-more {
-          font-size: 24px;
-          text-shadow: 1px 1px 3px black;
-        }
-      }
-      .cd-read-more {
-        font-size: 14px;
-        position: absolute;
-        bottom: 8px;
-        padding: 0 0.2em;
-        border-radius: 2px;
-      }
+    &:nth-child(3) .img-container {
+      background-image: url('/images/panels3.jpg')
     }
-  }
-  // timeline images
-  @media (min-width: 768px) {
-    .cd-timeline-img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      border-radius: 50%;
-      box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
-      width: 30px;
-      height: 30px;
-      left: 50%;
-      margin-left: -15px;
-      background-color: white;
+    &:nth-child(4) .img-container {
+      background-image: url('/images/panels1.jpg')
+    }
+    &:nth-child(5) .img-container {
+      background-image: url('/images/bemed1.jpg')
+    }
+    &:nth-child(6) .img-container {
+      background-image: url('/images/mentormentee1.jpg')
     }
   }
 }
