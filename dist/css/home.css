@@ -431,3 +431,69 @@ h3 {
   margin: 0;
   padding: 0;
 }
+/******************** CAROUSEL ********************/
+#committee-carousel {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.intro-text {
+  z-index: 10;
+  top: 70%;
+  padding: 0;
+}
+.intro-text p {
+  max-height: 250px;
+  overflow: auto;
+}
+.carousel-indicators {
+  bottom: 0 !important;
+}
+.carousel-indicators li {
+  border: none;
+  width: 10px;
+  height: 10px;
+  margin: 0 6px;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -moz-transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -o-transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.carousel-indicators .active {
+  width: 16px;
+  height: 16px;
+  margin: -3px 6px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.carousel-caption {
+  visibility: hidden !important;
+}
+.carousel-caption p {
+  margin: 0;
+}
+.carousel-caption .credits {
+  color: #808080;
+}
+.carousel-inner {
+  position: absolute;
+  height: 100%;
+}
+.carousel-inner .item {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+.carousel-inner .item:nth-child(1) {
+  background-image: url("/images/overlay.png"), url("/images/lunchbythebear1.jpg");
+}
+.carousel-inner .item:nth-child(2) {
+  background-image: url("/images/overlay.png"), url("/images/lunchbythebear1.jpg");
+}
+.carousel-inner .item:nth-child(3) {
+  background-image: url("/images/overlay.png"), url("/images/lunchbythebear1.jpg");
+}
