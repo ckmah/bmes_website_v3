@@ -469,7 +469,7 @@ HOMEPAGE FORMATTING
 .committee-list .item .item-inner .item-info {
   position: relative;
   height: 350px;
-  padding: 1.5em 1em;
+  padding: 1.5em 1em 1em;
   white-space: normal;
 }
 .committee-list .item .item-inner .item-info h4 {
