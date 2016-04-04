@@ -26,3 +26,62 @@ h3 {
     padding: 0;
   }
 }
+
+/******************** CAROUSEL ********************/
+
+#home-carousel {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.intro-text {
+  z-index: 10;
+  top: 70%;
+  padding: 0;
+  p {
+    max-height: 250px;
+    overflow: auto;
+  }
+}
+.carousel-indicators {
+  bottom: 0 !important;
+  li {
+    border: none;
+    width: 10px;
+    height: 10px;
+    margin: 0 6px;
+    background-color: rgba(255, 255, 255, 0.5);
+    .box-shadow(0, 1px, 5px, rgba(0, 0, 0, 0.3));
+    .ease-out-cubic(0.6s);
+  }
+  .active {
+    width: 16px;
+    height: 16px;
+    margin: -3px 6px;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+}
+.carousel-caption {
+  visibility: hidden !important; // TAKE THIS OUT LATER
+  p {
+    // display: inline;
+    margin: 0;
+  }
+  .credits {
+    color: @gray;
+  }
+}
+.carousel-inner {
+  position: absolute;
+  height: 100%;
+  .item {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    &:nth-child(1) {
+      background-image: url("/images/overlay.png"), url("/images/cover.jpg");
+    }
+  }
+}
