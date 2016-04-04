@@ -489,11 +489,5 @@ h3 {
   background-position: center center;
 }
 .carousel-inner .item:nth-child(1) {
-  background-image: url("/images/overlay.png"), url("/images/lunchbythebear1.jpg");
-}
-.carousel-inner .item:nth-child(2) {
-  background-image: url("/images/overlay.png"), url("/images/lunchbythebear1.jpg");
-}
-.carousel-inner .item:nth-child(3) {
-  background-image: url("/images/overlay.png"), url("/images/lunchbythebear1.jpg");
+  background-image: url("/images/overlay.png"), url("/images/cover.jpg");
 }
