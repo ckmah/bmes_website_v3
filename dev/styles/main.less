@@ -21,6 +21,7 @@ GENERAL FORMATTING
 @red: #e51c23;
 @teal: #009688;
 @yellow: #FFC107;
+@white: #FFFFFF;
 
 
 /******************** NAVBAR ********************/
@@ -285,6 +286,20 @@ a {
   .ease-out-cubic;
   &:hover {
     background-color: @blue !important;
+  }
+}
+
+.register-bubble {
+  display: inline-block;
+  font-size: 20px;
+  background-color: lighten(@red, 15%) !important;
+  color: white !important;
+  padding: 0.5em 0.9em;
+  margin: 0.3em 0;
+  .card;
+  .ease-out-cubic;
+  &:hover {
+    background-color: @red !important;
   }
 }
 

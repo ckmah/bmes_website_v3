@@ -1,0 +1,222 @@
+@import "mixins.less";
+@import "main.less";
+/***
+HOMEPAGE FORMATTING
+
+  TABLE OF CONTENTS
+
+    CAROUSEL - main carousel
+
+    EVENT SCHEDULES
+***/
+/******************** CAROUSEL ********************/
+#event-carousel {
+  height: 100vh;
+  position: relative;
+    @media (min-width: 768px) {
+    height: 70vh;
+  }
+  overflow: hidden;
+}
+.intro-text {
+  text-align: center;
+  z-index: 10;
+}
+.carousel-indicators {
+  bottom: 0 !important;
+  li {
+    border: none;
+    width: 10px;
+    height: 10px;
+    margin: 0 6px;
+    background-color: rgba(255, 255, 255, 0.5);
+    .box-shadow(0, 1px, 5px, rgba(0, 0, 0, 0.3));
+    .ease-out-cubic(0.6s);
+  }
+  .active {
+    width: 16px;
+    height: 16px;
+    margin: -3px 6px;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+}
+.carousel-caption {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 75%;
+  .transform(translate(-49.7%, 0));
+  p {
+    margin: 0;
+  }
+  .credits {
+    color: @gray;
+  }
+}
+.carousel-inner {
+  position: absolute;
+  height: 100%;
+  .item {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    &:nth-child(1) {
+      background-image: url("/images/overlay.png"), url("/images/lunchbythebear1.jpg");
+    }
+    &:nth-child(2) {
+      background-image: url("/images/overlay.png"), url("/images/lunchbythebear1.jpg");
+    }
+    &:nth-child(3) {
+      background-image: url("/images/overlay.png"), url("/images/lunchbythebear1.jpg");
+    }
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+/******************** MAIN CONTENT ********************/
+
+h3 {
+  color: black !important;
+}
+.related-events {
+  padding: 0;
+  text-align: center;
+  .item {
+    padding: 1em 1.5em;
+    margin: 0;
+    .item-inner {
+      position: relative;
+      height: 250px;
+      width: 100%;
+      padding: 1em;
+      background-color: lighten(desaturate(@blue, 30%), 10%);
+      background-image: url("/images/beday1.jpg");
+      background-size: cover;
+      background-position: center;
+      .ease-out-cubic;
+      &:hover {
+        background-color: @blue;
+        margin-top: -5px;
+        margin-bottom: 5px;
+      }
+      h4 {
+        z-index: 2;
+        // color: black !important;
+        position: absolute;
+        margin-top: 0;
+      }
+    }
+  }
+}
+.application-links {
+
+  .new {
+    background-color: lighten(desaturate(@blue, 30%), 30%);
+  }
+
+  .app {
+    padding: 1em;
+    display: inline-block;
+    .app-inner {
+      padding: 1em;
+      padding-bottom: 0.25em;
+      .ease-out-cubic;
+      &:hover {
+        background-color: lighten(desaturate(@blue, 40%), 40%);
+      }
+
+      h4 {
+        color: black !important;
+      }
+    }
+  }
+}
+
+/******************** EVENT SCHEDULES ********************/
+.datagrid {
+  background: @white; 
+  overflow: hidden; 
+  table {
+    border-collapse: collapse; 
+    width: 100%; 
+    tr {
+      .time {
+        white-space: nowrap;
+        text-align: justify;
+      }
+    }
+    td {
+      padding: 0.5em 0.5em;
+    }
+    th {
+      padding: 0.5em 0.5em;
+    }
+    tbody {
+      td {
+        color: @gray-dark;
+        border-left: 0.4em solid @blue;
+        font-size: 14px;
+        font-weight: normal; 
+      }
+      .alt {
+        td {
+          background: lighten(@blue, 40%) !important; 
+          color: @gray-dark;
+        }
+      }
+      td:first-child { 
+        border-left: none; 
+      }
+      tr:last-child td { 
+        border-bottom: none; 
+      }
+    }
+  }
+}
+
+/******************** OFFICER PICTURES ********************/
+.officer {
+  text-align: left;
+  overflow: hidden;
+  padding: 2em 1em;
+  &:nth-child(even) {
+    .img-container {
+      float: right;
+      img {
+        // float: right;
+      }
+    }
+  }
+  .img-container {
+    float: left;
+    img {
+      margin: 0 auto !important;
+      max-height: 400px;
+      padding: 0;
+      .box-shadow(0, 0, 5px, rgba(0, 0, 0, 0.5));
+    }
+  }
+  // for all but xs width screens
+  @media (min-width: 768px) {
+    .officer-info {
+      padding-top: 0 !important;
+      h3 {
+        text-align: left !important;
+      }
+    }
+  }
+  .officer-info {
+    padding-top: 1.5em;
+  }
+  h3 {
+    color: @gray-dark !important;
+    margin: 0.5em 0;
+    margin-top: 0;
+    text-align: center;
+  }
+  p {
+    color: @p-color;
+    font-size: 16px !important;
+  }
+}

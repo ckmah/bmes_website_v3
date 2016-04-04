@@ -2,8 +2,8 @@
   background-image: url("/images/overlay.png"), url("/images/bemed1.jpg") !important;
 }
 .item:nth-child(2) {
-  background-image: url("/images/overlay.png"), url("/images/bemed2.jpg") !important;
+  background-image: url("/images/overlay.png"), url("http://www.molecularimaging.com/sites/molecularimaging.com/files/ckfinder/userfilesimages/Sanford%20Consorium%20for%20Regenerative%20Medicine.jpg") !important;
 }
 .item:nth-child(3) {
-  background-image: url("/images/overlay.png"), url("/images/bemed3.jpg") !important;
+  background-image: url("/images/overlay.png"), url("https://www.helmholtz-muenchen.de/fileadmin/HZM-Corporate-Website/Bilder/HZM/Mediathek/images_Bildarchiv/Pipittervorgang_gross.jpg") !important;
 }
