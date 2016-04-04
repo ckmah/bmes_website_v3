@@ -359,6 +359,25 @@ a:hover {
 .officer-bubble:hover {
   background-color: #2196F3 !important;
 }
+.register-bubble {
+  display: inline-block;
+  font-size: 20px;
+  background-color: #ed6166 !important;
+  color: white !important;
+  padding: 0.5em 0.9em;
+  margin: 0.3em 0;
+  background-color: white;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -moz-transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -o-transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.register-bubble:hover {
+  background-color: #e51c23 !important;
+}
 .contact-bubble {
   display: inline-block;
   font-size: 16px;

@@ -428,3 +428,218 @@ a:hover {
   width: 3em;
   margin: 0 auto;
 }
+/***
+HOMEPAGE FORMATTING
+
+  TABLE OF CONTENTS
+
+    CAROUSEL - main carousel
+
+    EVENT SCHEDULES
+***/
+/******************** CAROUSEL ********************/
+#event-carousel {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  #event-carousel {
+    height: 70vh;
+  }
+}
+.intro-text {
+  text-align: center;
+  z-index: 10;
+}
+.carousel-indicators {
+  bottom: 0 !important;
+}
+.carousel-indicators li {
+  border: none;
+  width: 10px;
+  height: 10px;
+  margin: 0 6px;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -moz-transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -o-transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.carousel-indicators .active {
+  width: 16px;
+  height: 16px;
+  margin: -3px 6px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.carousel-caption {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 75%;
+  -webkit-transform: translateZ(0) translate(-49.7%, 0);
+  -moz-transform: translateZ(0) translate(-49.7%, 0);
+  -ms-transform: translateZ(0) translate(-49.7%, 0);
+  -o-transform: translateZ(0) translate(-49.7%, 0);
+  transform: translateZ(0) translate(-49.7%, 0);
+}
+.carousel-caption p {
+  margin: 0;
+}
+.carousel-caption .credits {
+  color: #808080;
+}
+.carousel-inner {
+  position: absolute;
+  height: 100%;
+}
+.carousel-inner .item {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+.carousel-inner .item:nth-child(1) {
+  background-image: url("/images/overlay.png"), url("/images/lunchbythebear1.jpg");
+}
+.carousel-inner .item:nth-child(2) {
+  background-image: url("/images/overlay.png"), url("/images/lunchbythebear1.jpg");
+}
+.carousel-inner .item:nth-child(3) {
+  background-image: url("/images/overlay.png"), url("/images/lunchbythebear1.jpg");
+}
+/******************** MAIN CONTENT ********************/
+h3 {
+  color: black !important;
+}
+.related-events {
+  padding: 0;
+  text-align: center;
+}
+.related-events .item {
+  padding: 1em 1.5em;
+  margin: 0;
+}
+.related-events .item .item-inner {
+  position: relative;
+  height: 250px;
+  width: 100%;
+  padding: 1em;
+  background-color: #6daada;
+  background-image: url("/images/beday1.jpg");
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -moz-transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -o-transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.related-events .item .item-inner:hover {
+  background-color: #2196F3;
+  margin-top: -5px;
+  margin-bottom: 5px;
+}
+.related-events .item .item-inner h4 {
+  z-index: 2;
+  position: absolute;
+  margin-top: 0;
+}
+.application-links .new {
+  background-color: #bed9ef;
+}
+.application-links .app {
+  padding: 1em;
+  display: inline-block;
+}
+.application-links .app .app-inner {
+  padding: 1em;
+  padding-bottom: 0.25em;
+  -webkit-transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -moz-transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -o-transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.application-links .app .app-inner:hover {
+  background-color: #e9f1f7;
+}
+.application-links .app .app-inner h4 {
+  color: black !important;
+}
+/******************** EVENT SCHEDULES ********************/
+.datagrid {
+  background: #FFFFFF;
+  overflow: hidden;
+}
+.datagrid table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.datagrid table tr .time {
+  white-space: nowrap;
+  text-align: justify;
+}
+.datagrid table td {
+  padding: 0.5em 0.5em;
+}
+.datagrid table th {
+  padding: 0.5em 0.5em;
+}
+.datagrid table tbody td {
+  color: #4d4d4d;
+  border-left: 0.4em solid #2196F3;
+  font-size: 14px;
+  font-weight: normal;
+}
+.datagrid table tbody .alt td {
+  background: #e3f2fd !important;
+  color: #4d4d4d;
+}
+.datagrid table tbody td:first-child {
+  border-left: none;
+}
+.datagrid table tbody tr:last-child td {
+  border-bottom: none;
+}
+/******************** OFFICER PICTURES ********************/
+.officer {
+  text-align: left;
+  overflow: hidden;
+  padding: 2em 1em;
+}
+.officer:nth-child(even) .img-container {
+  float: right;
+}
+.officer .img-container {
+  float: left;
+}
+.officer .img-container img {
+  margin: 0 auto !important;
+  max-height: 400px;
+  padding: 0;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+@media (min-width: 768px) {
+  .officer .officer-info {
+    padding-top: 0 !important;
+  }
+  .officer .officer-info h3 {
+    text-align: left !important;
+  }
+}
+.officer .officer-info {
+  padding-top: 1.5em;
+}
+.officer h3 {
+  color: #4d4d4d !important;
+  margin: 0.5em 0;
+  margin-top: 0;
+  text-align: center;
+}
+.officer p {
+  color: #808080;
+  font-size: 16px !important;
+}
