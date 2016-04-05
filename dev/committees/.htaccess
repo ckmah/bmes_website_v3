@@ -6,8 +6,3 @@ RewriteRule ^(.*)$ http://www.bmes.ucsd.edu/$1 [r=301,nc]
 
 //Remove HTML Extension
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
-
-//Custom 404 errors
-ErrorDocument 404 error.html
-
-//Block bad bots
