@@ -436,6 +436,8 @@ HOMEPAGE FORMATTING
     CAROUSEL - main carousel
 
     EVENT SCHEDULES
+    EVENT MAP
+    OFFICER PICTURES
 ***/
 /******************** CAROUSEL ********************/
 #event-carousel {
@@ -602,6 +604,11 @@ h3 {
 }
 .datagrid table tbody tr:last-child td {
   border-bottom: none;
+}
+/******************** EVENT MAP ********************/
+div#map iframe {
+  display: block;
+  width: 100%;
 }
 /******************** OFFICER PICTURES ********************/
 .officer {
