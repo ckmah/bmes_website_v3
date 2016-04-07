@@ -48,72 +48,34 @@ GENERAL FORMATTING
 ***/
 /******************** GLOBAL VARIABLES ********************/
 /******************** NAVBAR ********************/
-.navbar-custom .navbar-header .navbar-brand img {
+#logo {
   display: none;
 }
 @media (min-width: 768px) {
-  .navbar-md {
-    min-height: 40px !important;
-    height: 40px !important;
+  #nav {
+    min-height: 60px;
+    height: 60px;
+    margin: 0;
+    background-color: #e6e6e6;
+    -webkit-transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+    -moz-transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+    -o-transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
   }
-  .navbar-md .navbar-header .navbar-brand {
+  #nav li > a {
+    font-size: 14px;
+  }
+  #nav .navbar-header .navbar-brand {
     position: relative;
-    padding-top: 0px !important;
-    padding-bottom: 0px !important;
+    padding-top: 0;
+    padding-bottom: 0;
     height: auto;
     -webkit-filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.5));
     filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.5));
     -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(@x, @y, @color)";
     filter: "progid:DXImageTransform.Microsoft.Dropshadow(@x, @y, @color)";
   }
-  .navbar-md .navbar-header .navbar-brand .name {
-    padding-left: 10px;
-    font-size: 30px;
-    display: inline;
-    -webkit-transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
-    -moz-transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
-    -o-transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
-    transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-  .navbar-md .navbar-header .navbar-brand img {
-    padding-top: 4px;
-    display: inline;
-    height: 50px;
-    -webkit-transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
-    -moz-transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
-    -o-transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
-    transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-  .navbar-md .navbar-nav > li > a {
-    padding-top: 8px !important;
-    padding-bottom: 8px !important;
-  }
-  .navbar-md .divider-vertical {
-    display: inline-block;
-    margin: 10px 0;
-    height: 1.5em;
-    width: 1px;
-    background-color: #b3b3b3;
-    -webkit-transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
-    -moz-transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
-    -o-transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
-    transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-  .navbar-lg {
-    min-height: 60px !important;
-    height: 60px !important;
-  }
-  .navbar-lg .navbar-header .navbar-brand {
-    position: relative;
-    padding-top: 0px !important;
-    padding-bottom: 0px !important;
-    height: auto;
-    -webkit-filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.5));
-    filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.5));
-    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(@x, @y, @color)";
-    filter: "progid:DXImageTransform.Microsoft.Dropshadow(@x, @y, @color)";
-  }
-  .navbar-lg .navbar-header .navbar-brand .name {
+  #nav .navbar-header .navbar-brand .name {
     padding-left: 10px;
     font-size: 36px;
     display: inline;
@@ -122,7 +84,7 @@ GENERAL FORMATTING
     -o-transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
     transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
   }
-  .navbar-lg .navbar-header .navbar-brand img {
+  #nav .navbar-header .navbar-brand img {
     padding-top: 4px;
     display: inline;
     height: 80px;
@@ -131,11 +93,11 @@ GENERAL FORMATTING
     -o-transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
     transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
   }
-  .navbar-lg .navbar-nav > li > a {
-    padding-top: 18px !important;
-    padding-bottom: 18px !important;
+  #nav .navbar-nav > li > a {
+    padding-top: 18px;
+    padding-bottom: 18px;
   }
-  .navbar-lg .divider-vertical {
+  #nav .divider-vertical {
     display: inline-block;
     margin: 10px 0;
     height: 3em;
@@ -145,17 +107,6 @@ GENERAL FORMATTING
     -moz-transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
     -o-transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
     transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-  .navbar-custom {
-    margin: 0;
-    background-color: #e6e6e6;
-    -webkit-transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
-    -moz-transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
-    -o-transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
-    transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-  .navbar-custom li > a {
-    font-size: 14px !important;
   }
   .dropdown .dropdown-menu {
     display: block;
@@ -228,7 +179,7 @@ body {
   position: relative;
   margin: 0;
   top: 60px;
-  padding: 0px !important;
+  padding: 0 !important;
   height: 100vh;
   text-align: center;
   background: url("/images/overlay.png"), url("/images/cover.jpg");
@@ -402,7 +353,7 @@ a:hover {
   position: relative;
 }
 #subscribe {
-  padding: 1em 1em;
+  padding: 1em;
   margin: 1em;
   white-space: nowrap;
 }
