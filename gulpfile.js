@@ -29,11 +29,12 @@ var bases = {
 };
 
 var paths = {
+  assets: 'assets/**',
   js: ['js/*.js', '!js/*.min.js'],
   jsAll: ['js/*.js'],
   styles: ['styles/*.less', 'styles/**/*.less', 'styles/*.css'],
   // html: ['*.html', '**/*.html'],
-  // TODO load fonts
+  fonts: ['fonts/**/*'],
   images: ['images/**/*.png', 'images/**/*.jpg'],
   extras: ['.htcacess', 'crossdomain.xml', 'humans.txt', 'manifest.appcache', 'robots.txt', 'favicon.ico'],
   pages: ['pages/**/*', 'layouts/**/*', 'partials/**/*'],
@@ -42,6 +43,14 @@ var paths = {
 };
 
 gulp.task('default', ['sequence']);
+
+// Static files
+gulp.task('assets', function() {
+  return gulp.src(paths.assets, {
+    cwd: bases.dev
+  })
+    .pipe(gulp.dest(bases.dist));
+});
 
 // configure jshint task
 gulp.task('jshint', function() {
@@ -98,9 +107,9 @@ gulp.task('imagemin', function() {
 
 });
 
-// copy html files
-gulp.task('copy-html', function() {
-  return gulp.src(paths.html, {
+// copy fonts files
+gulp.task('fonts', function() {
+  return gulp.src(paths.fonts, {
       cwd: bases.dev,
       base: bases.dev
     })
@@ -144,8 +153,10 @@ gulp.task('copy-extras', function() {
 
 // build task
 gulp.task('build', [
+  'assets',
   'jshint',
   'build-js',
+  'fonts',
   'styles',
   'imagemin',
   'pages']);
@@ -159,6 +170,10 @@ gulp.task('serve', function(gulpCallback) {
     }
   }, function callback() {
     // server is now up, watch files
+    gulp.watch(paths.assets, {
+      cwd: bases.dev,
+      base: bases.dev
+    }, ['assets']);
     gulp.watch(paths.pages, {
       cwd: bases.dev,
       base: bases.dev
@@ -175,6 +190,10 @@ gulp.task('serve', function(gulpCallback) {
       cwd: bases.dev,
       base: bases.dev
     }, ['imagemin']);
+    gulp.watch(paths.fonts, {
+      cwd: bases.dev,
+      base: bases.dev
+    }, ['fonts']);
 
     //gulp.watch(bases.dev + paths.extras, ['copy-extras']);
     gulpCallback();

@@ -3,13 +3,10 @@ extends ../layouts/default
 block title
   title BMES | UCSD
 
+append styles
+  link(rel='stylesheet', type='text/css', href='/css/home.css')
 
-block body
-  h2 About Us
-  p.
-    <strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-    been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-    software like Aldus PageMaker including versions of Lorem Ipsum.
+append vars
+  - var title = 'Biomedical Engineering Society'
+  - var subtitle = 'University of California, San Diego'
+  - var maintext = 'The Biomedical Engineering Society (BMES) at the University of California, San Diego (UCSD) is dedicated to enriching the undergraduate experience for those in the Department of Bioengineering and for those interested in Biomedical Engineering by fostering personal growth and professional development. We encourage undergraduates to get involved with their education and start making a difference today!'

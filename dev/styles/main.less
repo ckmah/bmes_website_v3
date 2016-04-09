@@ -121,40 +121,45 @@ body {
   padding: 0;
 }
 // HOMEPAGE JUMBOTRON
-.intro {
+#intro {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   margin: 0;
-  top: 60px;
-  padding: 0 !important;
+  padding: 0;
   height: 100vh;
-  text-align: center;
   background: url("/images/overlay.png"), url("/images/cover.jpg");
   background-size: cover;
   background-repeat: repeat;
   background-position: center;
-  // SCROLL DOWN
-  .scroll-next {
-    .vertical-center;
-    position: absolute;
-    font-size: 24px;
-    color: white;
-    top: 82%;
-    .transform(translateX(-50%));
-    .ease-out-cubic;
-    &:hover {
-      .drop-shadow(0, 0, 5px, white);
-    }
-  }
 }
 // INTRO TEXT
-.intro-text {
+#intro-text {
+  // display: flex;
+  // flex-direction: column;
+  padding-top: 15em;
   color: white;
   text-shadow: 0 0 8px black;
-  position: absolute;
-  left: 50%;
-  top: 60%;
-  .transform(translate(-50%, -70%));
   text-align: left;
+}
+// SCROLL DOWN
+#scroll-next {
+  position: absolute;
+  bottom: 50px;
+  font-size: 24px;
+  color: white;
+  left: 49%;
+  .ease-out-cubic;
+  &:hover {
+    .drop-shadow(0, 0, 5px, white);
+  }
+}
+
+#main-text {
+  margin-top: 0.5em;
+  font-weight: 400;
 }
 // HEADING
 h1 {
@@ -176,8 +181,6 @@ h4 {
   background: @gray-lighter;
   position: relative;
   z-index: 2;
-  width: 100%;
-  padding: 2em 0;
   .box-shadow(0, 2px, 5px, rgba(0, 0, 0, 0.5));
 }
 // CUSTOM ROW SETTING
@@ -217,11 +220,9 @@ code {
   border-radius: 2px;
   .box-shadow(0, 2px, 5px, rgba(0, 0, 0, 0.3));
 }
-//hyperlink
+// hyperlink
 a {
-  &:hover {
-    text-decoration: none !important;
-  }
+  text-decoration: none !important;
 }
 .officer-bubble {
   display: inline-block;
@@ -229,7 +230,7 @@ a {
   background-color: lighten(@blue, 15%) !important;
   color: white !important;
   padding: 0.1em 0.5em;
-  margin: 0.3em 0;
+  margin: 0.3em;
   .card;
   .ease-out-cubic;
   &:hover {
@@ -267,7 +268,7 @@ a {
   position: relative;
 }
 // SUBSCRIPTION BOX
-#subscribe {
+#subscribe {d
   padding: 1em;
   margin: 1em;
   white-space: nowrap;
