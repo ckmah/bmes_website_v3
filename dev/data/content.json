@@ -1,0 +1,73 @@
+{
+  "committees": {
+    "beday": {
+      "name": "Bioengineering Day",
+      "officers": [
+        "Julie Yip",
+        "Bryan Yeh"
+      ],
+      "meetTime": "Thursdays at 8:00pm",
+      "meetLoc": "PFBH 291",
+      "pageUrl": "/committees/beday.html"
+    },
+    "labexpo": {
+      "name": "Lab Expo",
+      "officers": [
+        "Christopher Um",
+        "Jonathan Wickes"
+      ],
+      "meetTime": "Thursdays at 8:00pm",
+      "meetLoc": "PFBH 291",
+      "pageUrl": "/committees/labexpo.html"
+    },
+    "social": {
+      "name": "Social",
+      "officers": [
+        "Shouvik Gosh",
+        "Gladys Ornelas"
+      ],
+      "meetTime": "Thursdays at 8:00pm",
+      "meetLoc": "PFBH 291",
+      "pageUrl": "/committees/social.html"
+    },
+    "outreach": {
+      "name": "Outreach",
+      "officers": [
+        "Kathryn Kang",
+        "Alexandra Muise"
+      ],
+      "meetTime": "Thursdays at 8:00pm",
+      "meetLoc": "PFBH 291",
+      "pageUrl": "/committees/outreach.html"
+    },
+    "project": {
+      "name": "Project Team",
+      "officers": [
+        "Benjamin Yang",
+        "Sumit Dan"
+      ],
+      "meetTime": "Thursdays at 8:00pm",
+      "meetLoc": "PFBH 291",
+      "pageUrl": "/committees/projectteam.html"
+    },
+    "transmed": {
+      "name": "Translational Medicine Day",
+      "officers": [
+        "Yajur Maker",
+        "Vincent Hu"
+      ],
+      "meetTime": "Thursdays at 8:00pm",
+      "meetLoc": "PFBH 291",
+      "pageUrl": "/committees/RD.html"
+    },
+    "mediatech": {
+      "name": "Media and Technology",
+      "officers": [
+        "Austin Lefebvre"
+      ],
+      "meetTime": "Thursdays at 8:00pm",
+      "meetLoc": "PFBH 291",
+      "pageUrl": "/committees/mtech.html"
+    }
+  }
+}

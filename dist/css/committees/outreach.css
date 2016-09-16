@@ -1,5 +1,8 @@
-.carousel-inner .item {
-  background-image: url("/images/overlay.png"), url("/images/outreach1.jpg");
-  background-size: cover;
-  background-position: center top;
+.carousel-inner .item
+{
+    background-image: url('/images/overlay.png'), url('/images/outreach1.jpg');
+    background-position: center top;
+    background-size: cover;
 }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm91dHJlYWNoLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLDJFQUEyRTtFQUMzRSx1QkFBdUI7RUFDdkIsZ0NBQWdDO0NBQ2pDIiwiZmlsZSI6ImNvbW1pdHRlZXMvb3V0cmVhY2guY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmNhcm91c2VsLWlubmVyIC5pdGVtIHtcbiAgYmFja2dyb3VuZC1pbWFnZTogdXJsKFwiL2ltYWdlcy9vdmVybGF5LnBuZ1wiKSwgdXJsKFwiL2ltYWdlcy9vdXRyZWFjaDEuanBnXCIpO1xuICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXIgdG9wO1xufVxuIl0sInNvdXJjZVJvb3QiOiIvc291cmNlLyJ9 */

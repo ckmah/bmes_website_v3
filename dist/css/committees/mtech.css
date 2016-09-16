@@ -1,10 +1,14 @@
-.carousel-inner .item {
-  background-image: url("/images/overlay.png"), url("/images/mtech.jpg");
-  background-size: cover;
-  background-position: center top;
+.carousel-inner .item
+{
+    background-image: url('/images/overlay.png'), url('/images/mtech.jpg');
+    background-position: center top;
+    background-size: cover;
 }
-.related-events .item .item-inner {
-  background-image: url("/images/mtech.jpg");
-  background-size: cover;
-  background-position: center;
+.related-events .item .item-inner
+{
+    background-image: url('/images/mtech.jpg');
+    background-position: center;
+    background-size: cover;
 }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm10ZWNoLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLHVFQUF1RTtFQUN2RSx1QkFBdUI7RUFDdkIsZ0NBQWdDO0NBQ2pDO0FBQ0Q7RUFDRSwyQ0FBMkM7RUFDM0MsdUJBQXVCO0VBQ3ZCLDRCQUE0QjtDQUM3QiIsImZpbGUiOiJjb21taXR0ZWVzL210ZWNoLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jYXJvdXNlbC1pbm5lciAuaXRlbSB7XG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybChcIi9pbWFnZXMvb3ZlcmxheS5wbmdcIiksIHVybChcIi9pbWFnZXMvbXRlY2guanBnXCIpO1xuICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXIgdG9wO1xufVxuLnJlbGF0ZWQtZXZlbnRzIC5pdGVtIC5pdGVtLWlubmVyIHtcbiAgYmFja2dyb3VuZC1pbWFnZTogdXJsKFwiL2ltYWdlcy9tdGVjaC5qcGdcIik7XG4gIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjtcbn1cbiJdLCJzb3VyY2VSb290IjoiL3NvdXJjZS8ifQ== */

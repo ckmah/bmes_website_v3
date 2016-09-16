@@ -1,6 +1,10 @@
-.item:nth-child(1) {
-  background-image: url("/images/overlay.png"), url("/images/mentormentee1.jpg") !important;
+.item:nth-child(1)
+{
+    background-image: url('/images/overlay.png'), url('/images/mentormentee1.jpg') !important;
 }
-.item:nth-child(2) {
-  background-image: url("/images/overlay.png"), url("/images/mentormentee2.jpg") !important;
+.item:nth-child(2)
+{
+    background-image: url('/images/overlay.png'), url('/images/mentormentee2.jpg') !important;
 }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1lbnRvcm1lbnRlZS5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSwwRkFBMEY7Q0FDM0Y7QUFDRDtFQUNFLDBGQUEwRjtDQUMzRiIsImZpbGUiOiJldmVudHMvbWVudG9ybWVudGVlLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5pdGVtOm50aC1jaGlsZCgxKSB7XG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybChcIi9pbWFnZXMvb3ZlcmxheS5wbmdcIiksIHVybChcIi9pbWFnZXMvbWVudG9ybWVudGVlMS5qcGdcIikgIWltcG9ydGFudDtcbn1cbi5pdGVtOm50aC1jaGlsZCgyKSB7XG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybChcIi9pbWFnZXMvb3ZlcmxheS5wbmdcIiksIHVybChcIi9pbWFnZXMvbWVudG9ybWVudGVlMi5qcGdcIikgIWltcG9ydGFudDtcbn1cbiJdLCJzb3VyY2VSb290IjoiL3NvdXJjZS8ifQ== */

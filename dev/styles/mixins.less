@@ -24,21 +24,14 @@
   .transform("translate(-50%, -50%)");
 }
 .gradient (@origin, @color1, @color2) {
-  background-image: -webkit-linear-gradient(@origin, @color1, @color2);
-  background-image: -moz-linear-gradient(@origin, @color1, @color2);
-  background-image: -o-linear-gradient(@origin, @color1, @color2);
-  background-image: -ms-linear-gradient(@origin, @color1, @color2);
   background-image: linear-gradient(@origin, @color1, @color2);
 }
 .box-shadow (@x, @y, @blur, @color) {
-  -webkit-box-shadow: @x @y @blur @color;
   box-shadow: @x @y @blur @color;
 }
 .drop-shadow (@x, @y, @blur, @color) {
-  -webkit-filter: drop-shadow(@x @y @blur @color);
   filter: drop-shadow(@x @y @blur @color);
-  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(@x, @y, @color)";
-  filter: "progid:DXImageTransform.Microsoft.Dropshadow(@x, @y, @color)";
+
 }
 .filter(@filters) {
   filter: @filters;

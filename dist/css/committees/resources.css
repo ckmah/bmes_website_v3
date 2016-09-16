@@ -1,3 +1,6 @@
-.carousel-inner .item {
-  background-image: url("/images/overlay.png"), url("/images/lunchbythebear1.jpg");
+.carousel-inner .item
+{
+    background-image: url('/images/overlay.png'), url('/images/lunchbythebear1.jpg');
 }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInJlc291cmNlcy5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxpRkFBaUY7Q0FDbEYiLCJmaWxlIjoiY29tbWl0dGVlcy9yZXNvdXJjZXMuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmNhcm91c2VsLWlubmVyIC5pdGVtIHtcbiAgYmFja2dyb3VuZC1pbWFnZTogdXJsKFwiL2ltYWdlcy9vdmVybGF5LnBuZ1wiKSwgdXJsKFwiL2ltYWdlcy9sdW5jaGJ5dGhlYmVhcjEuanBnXCIpO1xufVxuIl0sInNvdXJjZVJvb3QiOiIvc291cmNlLyJ9 */

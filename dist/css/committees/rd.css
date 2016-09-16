@@ -1,10 +1,14 @@
-.carousel-inner .item {
-  background-image: url("/images/overlay.png"), url("/images/bemed1.jpg");
-  background-size: cover;
-  background-position: center center;
+.carousel-inner .item
+{
+    background-image: url('/images/overlay.png'), url('/images/bemed1.jpg');
+    background-position: center center;
+    background-size: cover;
 }
-.related-events .item .item-inner {
-  background-image: none;
-  background-size: cover;
-  background-position: center;
+.related-events .item .item-inner
+{
+    background-image: none;
+    background-position: center;
+    background-size: cover;
 }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInJkLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLHdFQUF3RTtFQUN4RSx1QkFBdUI7RUFDdkIsbUNBQW1DO0NBQ3BDO0FBQ0Q7RUFDRSx1QkFBdUI7RUFDdkIsdUJBQXVCO0VBQ3ZCLDRCQUE0QjtDQUM3QiIsImZpbGUiOiJjb21taXR0ZWVzL3JkLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jYXJvdXNlbC1pbm5lciAuaXRlbSB7XG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybChcIi9pbWFnZXMvb3ZlcmxheS5wbmdcIiksIHVybChcIi9pbWFnZXMvYmVtZWQxLmpwZ1wiKTtcbiAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgYmFja2dyb3VuZC1wb3NpdGlvbjogY2VudGVyIGNlbnRlcjtcbn1cbi5yZWxhdGVkLWV2ZW50cyAuaXRlbSAuaXRlbS1pbm5lciB7XG4gIGJhY2tncm91bmQtaW1hZ2U6IG5vbmU7XG4gIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjtcbn1cbiJdLCJzb3VyY2VSb290IjoiL3NvdXJjZS8ifQ== */

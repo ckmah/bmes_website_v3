@@ -1,0 +1,14 @@
+mixin committees-card(group)
+  .committee-item.col-xs-6.col-md-4
+    .item-inner
+      .img-container
+        .scrim-bottom
+        h3 #{group.name}
+      .item-info
+        for officer in group.officers
+          a.officer-bubble(href='/contact.html') #{officer}
+        br
+        h5 Weekly Meetings
+        p #{group.meetTime} @#{group.meetLoc}
+        br
+        a.more(href="#{pageUrl}") Learn more

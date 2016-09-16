@@ -1,10 +1,14 @@
-.carousel-inner .item {
-  background-image: url("/images/overlay.png"), url("/images/labexpo1.jpg");
-  background-size: cover;
-  background-position: center center;
+.carousel-inner .item
+{
+    background-image: url('/images/overlay.png'), url('/images/labexpo1.jpg');
+    background-position: center center;
+    background-size: cover;
 }
-.related-events .item .item-inner {
-  background-image: url("/images/labexpo2.jpg");
-  background-size: cover;
-  background-position: center;
+.related-events .item .item-inner
+{
+    background-image: url('/images/labexpo2.jpg');
+    background-position: center;
+    background-size: cover;
 }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImxhYmV4cG8uY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsMEVBQTBFO0VBQzFFLHVCQUF1QjtFQUN2QixtQ0FBbUM7Q0FDcEM7QUFDRDtFQUNFLDhDQUE4QztFQUM5Qyx1QkFBdUI7RUFDdkIsNEJBQTRCO0NBQzdCIiwiZmlsZSI6ImNvbW1pdHRlZXMvbGFiZXhwby5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuY2Fyb3VzZWwtaW5uZXIgLml0ZW0ge1xuICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoXCIvaW1hZ2VzL292ZXJsYXkucG5nXCIpLCB1cmwoXCIvaW1hZ2VzL2xhYmV4cG8xLmpwZ1wiKTtcbiAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgYmFja2dyb3VuZC1wb3NpdGlvbjogY2VudGVyIGNlbnRlcjtcbn1cbi5yZWxhdGVkLWV2ZW50cyAuaXRlbSAuaXRlbS1pbm5lciB7XG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybChcIi9pbWFnZXMvbGFiZXhwbzIuanBnXCIpO1xuICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XG59XG4iXSwic291cmNlUm9vdCI6Ii9zb3VyY2UvIn0= */

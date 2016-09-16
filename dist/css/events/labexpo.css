@@ -1,9 +1,14 @@
-.item:nth-child(1) {
-  background-image: url("/images/overlay.png"), url("/images/labexpo1.jpg") !important;
+.item:nth-child(1)
+{
+    background-image: url('/images/overlay.png'), url('/images/labexpo1.jpg') !important;
 }
-.item:nth-child(2) {
-  background-image: url("/images/overlay.png"), url("/images/labexpo2.jpg") !important;
+.item:nth-child(2)
+{
+    background-image: url('/images/overlay.png'), url('/images/labexpo2.jpg') !important;
 }
-.item:nth-child(3) {
-  background-image: url("/images/overlay.png"), url("/images/labexpo3.jpg") !important;
+.item:nth-child(3)
+{
+    background-image: url('/images/overlay.png'), url('/images/labexpo3.jpg') !important;
 }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImxhYmV4cG8uY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UscUZBQXFGO0NBQ3RGO0FBQ0Q7RUFDRSxxRkFBcUY7Q0FDdEY7QUFDRDtFQUNFLHFGQUFxRjtDQUN0RiIsImZpbGUiOiJldmVudHMvbGFiZXhwby5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuaXRlbTpudGgtY2hpbGQoMSkge1xuICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoXCIvaW1hZ2VzL292ZXJsYXkucG5nXCIpLCB1cmwoXCIvaW1hZ2VzL2xhYmV4cG8xLmpwZ1wiKSAhaW1wb3J0YW50O1xufVxuLml0ZW06bnRoLWNoaWxkKDIpIHtcbiAgYmFja2dyb3VuZC1pbWFnZTogdXJsKFwiL2ltYWdlcy9vdmVybGF5LnBuZ1wiKSwgdXJsKFwiL2ltYWdlcy9sYWJleHBvMi5qcGdcIikgIWltcG9ydGFudDtcbn1cbi5pdGVtOm50aC1jaGlsZCgzKSB7XG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybChcIi9pbWFnZXMvb3ZlcmxheS5wbmdcIiksIHVybChcIi9pbWFnZXMvbGFiZXhwbzMuanBnXCIpICFpbXBvcnRhbnQ7XG59XG4iXSwic291cmNlUm9vdCI6Ii9zb3VyY2UvIn0= */

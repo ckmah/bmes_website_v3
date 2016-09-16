@@ -1,102 +1,107 @@
 @import "mixins.less";
 @import "main.less";
+
 /***
 HOMEPAGE FORMATTING
 
   TABLE OF CONTENTS
 
     START - main jumbotron
-    MAIN CONTENT - content-inner, committee items
+    MAIN CONTENT - committee-list
 ***/
+
+
 /******************** START ********************/
 
 // JUMBOTRON TWEAKS
-.intro {
+#intro {
   @media (min-width: 768px) {
     height: 75vh;
   }
   text-align: center;
-  background: url("../images/overlay.png"), url("../images/committees.jpg");
+  background: url("../images/overlay.png"),
+  url("../images/committees.jpg");
   background-size: cover;
   background-position: center;
 }
-.content-inner {
-  padding: 0.5em;
-}
+
+// .content-inner {
+//   padding: 0.5em;
+// }
 // COMMITTEES ITEMS
-.committee-list {
-  .item {
-    padding: 0.7em;
-    // item inner container
-    .item-inner {
-      text-decoration: none;
-      color: @p-color;
+.committee-item {
+  padding: 0.5em;
+  // item inner container
+  .item-inner {
+    .card-z1;
+    text-decoration: none;
+    color: @p-color;
+    .ease-out-cubic;
+    // image container
+    .img-container {
+      position: relative;
       padding: 0;
+      height: 150px;
+      background-position: center;
+      background-size: cover;
+      border-top-left-radius: 2px;
+      border-top-right-radius: 2px;
       overflow: hidden;
-      .ease-out-cubic;
-      // image container
-      .img-container {
-        position: relative;
-        overflow: hidden;
-        padding: 0;
-        height: 350px;
-        background-position: center;
-        background-size: cover;
-        h3 {
-          color: white;
-          z-index: 1;
-          margin: 0.6em;
-          position: absolute;
-        }
-        img {
-          padding: 0em;
-          .ease-out-cubic;
-        }
+      h3 {
+        color: white;
+        z-index: 1;
+        margin: 0.6em;
+        position: absolute;
+        bottom: 0;
       }
-      // item info text
-      .item-info {
-        position: relative;
-        height: 350px;
-        padding: 1.5em 1em 1em;
-        white-space: normal;
-        h4 {
-          margin: 0.2em 0;
-          color: @gray-dark !important;
-        }
-        p {
-          max-height: 170px;
-          overflow: auto;
-          margin: 0;
-        }
-        .more {
-          position: absolute;
-          padding-top: 0.5em;
-          color: @blue;
-          bottom: 15px;
-          text-align: right;
-        }
+      img {
+        padding: 0em;
+        .ease-out-cubic;
       }
     }
-    &:nth-child(1) .img-container {
-      background-image: url('/images/beday1.jpg')
+    // item info text
+    .item-info {
+      position: relative;
+      // height: 300px;
+      padding: 1em;
+      white-space: normal;
+      h4 {
+        margin: 0.2em 0;
+        color: @gray-dark !important;
+      }
+      p {
+        max-height: 170px;
+        overflow: auto;
+        margin: 0;
+      }
+      .more {
+        position: absolute;
+        padding-top: 0.5em;
+        color: @blue;
+        bottom: 15px;
+        text-align: right;
+      }
     }
-    &:nth-child(2) .img-container {
-      background-image: url('/images/labexpo1.jpg')
-    }
-    &:nth-child(3) .img-container {
-      background-image: url('/images/home1.jpg')
-    }
-    &:nth-child(4) .img-container {
-      background-image: url('/images/outreach1.jpg')
-    }
-    &:nth-child(5) .img-container {
-      background-image: url('/images/projectteam1.jpg')
-    }
-    &:nth-child(6) .img-container {
-      background-image: url('/images/bemed1.jpg')
-    }
-    &:nth-child(7) .img-container {
-      background-image: url('/images/mtech.jpg')
-    }
+  }
+  &:nth-child(1) .img-container {
+    background-image: url('/images/beday1.jpg')
+  }
+  &:nth-child(2) .img-container {
+    background-image: url('/images/labexpo1.jpg')
+  }
+  &:nth-child(3) .img-container {
+    background-image: url('/images/home1.jpg')
+  }
+  &:nth-child(4) .img-container {
+    background-image: url('/images/outreach1.jpg')
+  }
+  &:nth-child(5) .img-container {
+    background-image: url('/images/projectteam1.jpg')
+  }
+  &:nth-child(6) .img-container {
+    background-image: url('/images/bemed1.jpg')
+  }
+  &:nth-child(7) .img-container {
+    background-image: url('/images/mtech.jpg')
   }
 }

@@ -1,9 +1,14 @@
-.item:nth-child(1) {
-  background-image: url("/images/overlay.png"), url("/images/bemed1.jpg") !important;
+.item:nth-child(1)
+{
+    background-image: url('/images/overlay.png'), url('/images/bemed1.jpg') !important;
 }
-.item:nth-child(2) {
-  background-image: url("/images/overlay.png"), url("http://www.molecularimaging.com/sites/molecularimaging.com/files/ckfinder/userfilesimages/Sanford%20Consorium%20for%20Regenerative%20Medicine.jpg") !important;
+.item:nth-child(2)
+{
+    background-image: url('/images/overlay.png'), url('http://www.molecularimaging.com/sites/molecularimaging.com/files/ckfinder/userfilesimages/Sanford%20Consorium%20for%20Regenerative%20Medicine.jpg') !important;
 }
-.item:nth-child(3) {
-  background-image: url("/images/overlay.png"), url("https://www.helmholtz-muenchen.de/fileadmin/HZM-Corporate-Website/Bilder/HZM/Mediathek/images_Bildarchiv/Pipittervorgang_gross.jpg") !important;
+.item:nth-child(3)
+{
+    background-image: url('/images/overlay.png'), url('https://www.helmholtz-muenchen.de/fileadmin/HZM-Corporate-Website/Bilder/HZM/Mediathek/images_Bildarchiv/Pipittervorgang_gross.jpg') !important;
 }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJlbWVkLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLG1GQUFtRjtDQUNwRjtBQUNEO0VBQ0Usa05BQWtOO0NBQ25OO0FBQ0Q7RUFDRSxtTUFBbU07Q0FDcE0iLCJmaWxlIjoiZXZlbnRzL2JlbWVkLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5pdGVtOm50aC1jaGlsZCgxKSB7XG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybChcIi9pbWFnZXMvb3ZlcmxheS5wbmdcIiksIHVybChcIi9pbWFnZXMvYmVtZWQxLmpwZ1wiKSAhaW1wb3J0YW50O1xufVxuLml0ZW06bnRoLWNoaWxkKDIpIHtcbiAgYmFja2dyb3VuZC1pbWFnZTogdXJsKFwiL2ltYWdlcy9vdmVybGF5LnBuZ1wiKSwgdXJsKFwiaHR0cDovL3d3dy5tb2xlY3VsYXJpbWFnaW5nLmNvbS9zaXRlcy9tb2xlY3VsYXJpbWFnaW5nLmNvbS9maWxlcy9ja2ZpbmRlci91c2VyZmlsZXNpbWFnZXMvU2FuZm9yZCUyMENvbnNvcml1bSUyMGZvciUyMFJlZ2VuZXJhdGl2ZSUyME1lZGljaW5lLmpwZ1wiKSAhaW1wb3J0YW50O1xufVxuLml0ZW06bnRoLWNoaWxkKDMpIHtcbiAgYmFja2dyb3VuZC1pbWFnZTogdXJsKFwiL2ltYWdlcy9vdmVybGF5LnBuZ1wiKSwgdXJsKFwiaHR0cHM6Ly93d3cuaGVsbWhvbHR6LW11ZW5jaGVuLmRlL2ZpbGVhZG1pbi9IWk0tQ29ycG9yYXRlLVdlYnNpdGUvQmlsZGVyL0haTS9NZWRpYXRoZWsvaW1hZ2VzX0JpbGRhcmNoaXYvUGlwaXR0ZXJ2b3JnYW5nX2dyb3NzLmpwZ1wiKSAhaW1wb3J0YW50O1xufVxuIl0sInNvdXJjZVJvb3QiOiIvc291cmNlLyJ9 */

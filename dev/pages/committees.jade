@@ -1,0 +1,18 @@
+extends ../layouts/default
+include ../mixins/mixins
+
+block title
+  title Committees - BMES | UCSD
+
+append styles
+  link(rel='stylesheet', type='text/css', href='/css/committees.css')
+
+append vars
+  - var title = 'Committees'
+  - var subtitle = 'Get involved with event planning, high school outreach programs and more with your fellow BMES members!'
+  - var maintext = ''
+
+block content
+  .committee-list
+    for group in content.committees
+      +committees-card(group)

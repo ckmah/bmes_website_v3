@@ -1,6 +1,10 @@
-.item:nth-child(1) {
-  background-image: url("/images/overlay.png"), url("/images/beday1.jpg") !important;
+.item:nth-child(1)
+{
+    background-image: url('/images/overlay.png'), url('/images/beday1.jpg') !important;
 }
-.item:nth-child(2) {
-  background-image: url("/images/overlay.png"), url("/images/beday2.jpg") !important;
+.item:nth-child(2)
+{
+    background-image: url('/images/overlay.png'), url('/images/beday2.jpg') !important;
 }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJlZGF5LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLG1GQUFtRjtDQUNwRjtBQUNEO0VBQ0UsbUZBQW1GO0NBQ3BGIiwiZmlsZSI6ImV2ZW50cy9iZWRheS5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuaXRlbTpudGgtY2hpbGQoMSkge1xuICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoXCIvaW1hZ2VzL292ZXJsYXkucG5nXCIpLCB1cmwoXCIvaW1hZ2VzL2JlZGF5MS5qcGdcIikgIWltcG9ydGFudDtcbn1cbi5pdGVtOm50aC1jaGlsZCgyKSB7XG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybChcIi9pbWFnZXMvb3ZlcmxheS5wbmdcIiksIHVybChcIi9pbWFnZXMvYmVkYXkyLmpwZ1wiKSAhaW1wb3J0YW50O1xufVxuIl0sInNvdXJjZVJvb3QiOiIvc291cmNlLyJ9 */
