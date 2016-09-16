@@ -1,0 +1,95 @@
+extends ../layouts/default
+
+block title
+  title Events - BMES | UCSD
+
+append styles
+  link(rel='stylesheet', type='text/css', href='/css/home.css')
+  link(rel='stylesheet', type='text/css', href='/css/events.css')
+
+append vars
+  - var title = 'Events'
+  - var subtitle = 'We have many Social & Professional Events!'
+  - var maintext = ''
+
+block content
+  .content-inner
+    .event-list
+      // start committee content here
+      .item.col-xs-12.col-md-12
+        .item-inner.card.col-xs-12
+          .img-container.col-md-4.col-xs-12.pull-left
+            .scrim-top
+          .item-info.col-xs-12.col-md-8.pull-right
+            a(name='beday')
+              h3 Bioengineering Day
+            h5 May 19th, 2016 at The BIOCOM Institute
+            br
+            p
+              | Bioengineering Day (BE Day) is a unique forum for networking between our industrial partners and the bioengineering community at UC San Diego. This undergraduate and graduate research symposia celebrates the accomplishments of our students, and provides opportunities for collaboration between them and fellow members from local industry, department alumni, or academia.
+            br
+            p
+              a(href='/events/beday.html') Learn more
+      .item.col-xs-12.col-md-12
+        .item-inner.card.col-xs-12
+          .img-container.col-md-4.col-xs-12.pull-left
+            .scrim-top
+          .item-info.col-xs-12.col-md-8.pull-right
+            h3 Lab Expo
+            h5 January 15th, 2016 in Price Center Ballroom East
+            br
+            p
+              | This event is designed to be similar to a career fair, except that the representatives tabling at the event range from undergraduate to graduate students and professors from labs on campus. Lab Expo provides undergraduate students a chance to not only see some of the research taking place across campus, but also get involved by joining a laboratory or learning more about on-going projects. It acts as a stepping stone into the world of both industrial and academic research!
+            br
+            p
+              a(href='/events/labexpo.html') Learn more
+      .item.col-xs-12.col-md-12
+        .item-inner.card.col-xs-12
+          .img-container.col-md-4.col-xs-12.pull-left
+            .scrim-top
+          .item-info.col-xs-12.col-md-8.pull-right
+            h3 BE Inspired
+            br
+            p
+              | BE Inspired invites professors and graduate students to come and present a topic from their research that they themselves feel especially passionate about. The purpose behind the event is to give bioengineering students the opportunity to learn about subjects outside of the major that, due to our heavy course load, we may not be able to take on during our undergraduate career. Students are given the opportunity to choose what to get out of their higher education in these intimate, small-sized events.
+            br
+            p
+              a(href='/events/beinspired.html') Learn more
+      .item.col-xs-12.col-md-12
+        .item-inner.card.col-xs-12
+          .img-container.col-md-4.col-xs-12.pull-left
+            .scrim-top
+          .item-info.col-xs-12.col-md-8.pull-right
+            h3 Industry & Academia Panels
+            br
+            p
+              | At the various panels we host throughout the year, graduate students and industry professionals from a variety of backgrounds are able to share their experiences with life beyond the undergraduate degree. At this event, students have the opportunity to connect with participants through a Q&A session! Past participants include M.S. candidates, Ph.D. candidates, and M.D./Ph.D. candidates, as well as industry companies such as Covidian and Illumina.
+            br
+            p
+              a(href='/events/panels.html') Learn more
+      .item.col-xs-12.col-md-12
+        .item-inner.card.col-xs-12
+          .img-container.col-md-4.col-xs-12.pull-left
+            .scrim-top
+          .item-info.col-xs-12.col-md-8.pull-right
+            h3 Translational Medicine Day
+            h5 April 23rd, 2016 at the Sanford Consortium
+            br
+            p
+              | Translational Medicine Day will bridge the discussions occurring in San Diego’s vibrant and expansive research community with the future of cutting edge healthcare, putting students, professors, and industry together to enhance the heart of this discussion. The event will have speakers, workshops, research labs, and panels that seek to demonstrate the potential of translational research in medicine and also provide undergraduates a look into opportunities to contribute to the field.
+            br
+            p
+              a(href='/events/translationalmedicine.html') Learn more
+      .item.col-xs-12.col-md-12
+        .item-inner.card.col-xs-12
+          .img-container.col-md-4.col-xs-12.pull-left
+            .scrim-top
+          .item-info.col-xs-12.col-md-8.pull-right
+            h3 Mentorship Program
+            br
+            p
+              | The BMES Mentorship program hopes to promote a sense of community in the Bioengineering Department for both underclassmen and upperclassmen. For many new freshman or transfer students, the new UC San Diego college environment and the Bioengineering department can be overwhelming. The BMES Mentorship Program serves to facilitate this new adjustment by introducing people who share the same academic interests, while helping underclassmen get academic and social advice to guide them through their undergraduate studies.
+            br
+            p
+              a(href='/events/mentormentee.html') Learn more
+      // event-list end
