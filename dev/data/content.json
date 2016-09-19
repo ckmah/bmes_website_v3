@@ -8,7 +8,8 @@
       ],
       "meetTime": "Thursdays at 8:00pm",
       "meetLoc": "PFBH 291",
-      "pageUrl": "/committees/beday.html"
+      "pageUrl": "/committees/beday.html",
+      "imageUrl": "/images/beday1.jpg"
     },
     "labexpo": {
       "name": "Lab Expo",
@@ -18,7 +19,8 @@
       ],
       "meetTime": "Thursdays at 8:00pm",
       "meetLoc": "PFBH 291",
-      "pageUrl": "/committees/labexpo.html"
+      "pageUrl": "/committees/labexpo.html",
+      "imageUrl": "/images/labexpo1.jpg"
     },
     "social": {
       "name": "Social",
@@ -28,7 +30,8 @@
       ],
       "meetTime": "Thursdays at 8:00pm",
       "meetLoc": "PFBH 291",
-      "pageUrl": "/committees/social.html"
+      "pageUrl": "/committees/social.html",
+      "imageUrl": "/images/home1.jpg"
     },
     "outreach": {
       "name": "Outreach",
@@ -38,7 +41,8 @@
       ],
       "meetTime": "Thursdays at 8:00pm",
       "meetLoc": "PFBH 291",
-      "pageUrl": "/committees/outreach.html"
+      "pageUrl": "/committees/outreach.html",
+      "imageUrl": "/images/outreach1.jpg"
     },
     "project": {
       "name": "Project Team",
@@ -48,7 +52,8 @@
       ],
       "meetTime": "Thursdays at 8:00pm",
       "meetLoc": "PFBH 291",
-      "pageUrl": "/committees/projectteam.html"
+      "pageUrl": "/committees/projectteam.html",
+      "imageUrl": "/images/projectteam1.jpg"
     },
     "transmed": {
       "name": "Translational Medicine Day",
@@ -58,7 +63,8 @@
       ],
       "meetTime": "Thursdays at 8:00pm",
       "meetLoc": "PFBH 291",
-      "pageUrl": "/committees/RD.html"
+      "pageUrl": "/committees/RD.html",
+      "imageUrl": "/images/bemed1.jpg"
     },
     "mediatech": {
       "name": "Media and Technology",
@@ -67,7 +73,52 @@
       ],
       "meetTime": "Thursdays at 8:00pm",
       "meetLoc": "PFBH 291",
-      "pageUrl": "/committees/mtech.html"
+      "pageUrl": "/committees/mtech.html",
+      "imageUrl": "/images/mtech.jpg"
+    }
+  },
+  "events": {
+    "beday": {
+      "name": "Bioengineering Day",
+      "setting": "May 19th, 2016 at The BIOCOM Institute",
+      "info": "Bioengineering Day (BE Day) is a unique forum for networking between our industrial partners and the bioengineering community at UC San Diego. This undergraduate and graduate research symposia celebrates the accomplishments of our students, and provides opportunities for collaboration between them and fellow members from local industry, department alumni, or academia.",
+      "pageUrl": "/events/beday.html",
+      "imageUrl": "/images/beday1.jpg"
+    },
+    "labexpo": {
+      "name": "Lab Expo",
+      "setting": "January 15th, 2016 in Price Center Ballroom East",
+      "info": "This event is designed to be similar to a career fair, except that the representatives tabling at the event range from undergraduate to graduate students and professors from labs on campus. Lab Expo provides undergraduate students a chance to not only see some of the research taking place across campus, but also get involved by joining a laboratory or learning more about on-going projects. It acts as a stepping stone into the world of both industrial and academic research!",
+      "pageUrl": "/events/labexpo.html",
+      "imageUrl": "/images/labexpo1.jpg"
+    },
+    "beinspired": {
+      "name": "BE Inspired",
+      "setting": "",
+      "info": "BE Inspired invites professors and graduate students to come and present a topic from their research that they themselves feel especially passionate about. The purpose behind the event is to give bioengineering students the opportunity to learn about subjects outside of the major that, due to our heavy course load, we may not be able to take on during our undergraduate career. Students are given the opportunity to choose what to get out of their higher education in these intimate, small-sized events.",
+      "pageUrl": "/events/beinspired.html",
+      "imageUrl": "/images/panels3.jpg"
+    },
+    "panels": {
+      "name": "Industry & Academia Panels",
+      "setting": "",
+      "info": "At the various panels we host throughout the year, graduate students and industry professionals from a variety of backgrounds are able to share their experiences with life beyond the undergraduate degree. At this event, students have the opportunity to connect with participants through a Q&A session! Past participants include M.S. candidates, Ph.D. candidates, and M.D./Ph.D. candidates, as well as industry companies such as Covidian and Illumina.",
+      "pageUrl": "/events/panels.html",
+      "imageUrl": "/images/panels1.jpg"
+    },
+    "transmed": {
+      "name": "Translational Medicine Day",
+      "setting": "April 23rd, 2016 at the Sanford Consortium",
+      "info": "Translational Medicine Day will bridge the discussions occurring in San Diego’s vibrant and expansive research community with the future of cutting edge healthcare, putting students, professors, and industry together to enhance the heart of this discussion. The event will have speakers, workshops, research labs, and panels that seek to demonstrate the potential of translational research in medicine and also provide undergraduates a look into opportunities to contribute to the field.",
+      "pageUrl": "/events/translationalmedicine.html",
+      "imageUrl": "/images/bemed1.jpg"
+    },
+    "mentor": {
+      "name": "Mentorship Program",
+      "setting": "",
+      "info": "The BMES Mentorship program hopes to promote a sense of community in the Bioengineering Department for both underclassmen and upperclassmen. For many new freshman or transfer students, the new UC San Diego college environment and the Bioengineering department can be overwhelming. The BMES Mentorship Program serves to facilitate this new adjustment by introducing people who share the same academic interests, while helping underclassmen get academic and social advice to guide them through their undergraduate studies.",
+      "pageUrl": "/events/mentormentee.html",
+      "imageUrl": "/images/mentormentee1.jpg"
     }
   }
 }

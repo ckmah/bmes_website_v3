@@ -1,7 +1,7 @@
 mixin committees-card(group)
   .committee-item.col-xs-6.col-md-4
     .item-inner
-      .img-container
+      .img-container(style="background-image:url('#{group.imageUrl}')")
         .scrim-bottom
         h3 #{group.name}
       .item-info
@@ -12,3 +12,13 @@ mixin committees-card(group)
         p #{group.meetTime} @#{group.meetLoc}
         br
         a.more(href="#{pageUrl}") Learn more
+
+mixin events-card(group)
+  .item.col-xs-12
+    a(href="#{group.pageUrl}").item-inner.col-xs-12
+      .img-container.col-xs-12.col-md-4(style="background-image:url('#{group.imageUrl}')")
+      .item-info.col-md-8
+        h3 #{group.name}
+        h5 #{group.setting}
+        br
+        p #{group.info}

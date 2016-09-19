@@ -1,5 +1,6 @@
 @import "mixins.less";
 @import "main.less";
+
 /***
 HOMEPAGE FORMATTING
 
@@ -8,6 +9,8 @@ HOMEPAGE FORMATTING
     START - main jumbotron
     MAIN CONTENT - event timeline, timeline content and images
 ***/
+
+
 /******************** START ********************/
 
 // JUMBOTRON TWEAKS
@@ -16,87 +19,78 @@ HOMEPAGE FORMATTING
     height: 75vh;
   }
   text-align: center;
-  background: url("../images/overlay.png"), url("../images/mentormentee2.jpg");
+  background: url("../images/overlay.png"),
+  url("../images/mentormentee2.jpg");
   background-size: cover;
   background-position: center top;
 }
+
+
 /******************** MAIN CONTENT ********************/
 
 // EVENT ITEMS
-.event-list {
-  .item {
-    padding: 0.7em;
-    // item inner container
-    .item-inner {
-      text-decoration: none;
-      color: @p-color;
-      padding: 0;
+.item {
+  padding: 0.7em;
+  // item inner container
+  .item-inner {
+    .card-z1;
+    color: @p-color;
+    padding: 0;
+    // image container
+    .img-container {
+      position: relative;
+      height: 350px;
       overflow: hidden;
-      .ease-out-cubic;
-      // image container
-      .img-container {
-        position: relative;
-        overflow: hidden;
-        padding: 0;
-        height: 350px;
-        background-position: center;
-        background-size: cover;
-        h3 {
-          color: white;
-          z-index: 1;
-          margin: 0.6em;
-          position: absolute;
-        }
-        img {
-          padding: 0em;
-          .ease-out-cubic;
-        }
+      padding: 0;
+      background-position: center;
+      background-size: cover;
+      border-top-left-radius: 2px;
+      border-bottom-left-radius: 2px;
+      h3 {
+        color: white;
+        z-index: 1;
+        margin: 0.6em;
+        position: absolute;
       }
-      // item info text
-      .item-info {
-        position: relative;
-        height: 350px;
-        padding: 1.5em 2em;
-        white-space: normal;
-        h3 {
-          margin: 0.2em 0;
-          color: @gray-dark !important;
-        }
-        h4 {
-          margin: 0.2em 0;
-          color: @gray-dark !important;
-        }
-        p {
-          max-height: 170px;
-          overflow: auto;
-          margin: 0;
-        }
-        .more {
-          position: absolute;
-          padding-top: 0.5em;
-          color: @blue;
-          bottom: 15px;
-          text-align: right;
-        }
+      img {
+        padding: 0em;
+        .ease-out-cubic;
       }
     }
-    &:nth-child(1) .img-container {
-      background-image: url('/images/beday1.jpg')
-    }
-    &:nth-child(2) .img-container {
-      background-image: url('/images/labexpo1.jpg')
-    }
-    &:nth-child(3) .img-container {
-      background-image: url('/images/panels3.jpg')
-    }
-    &:nth-child(4) .img-container {
-      background-image: url('/images/panels1.jpg')
-    }
-    &:nth-child(5) .img-container {
-      background-image: url('/images/bemed1.jpg')
-    }
-    &:nth-child(6) .img-container {
-      background-image: url('/images/mentormentee1.jpg')
+    // item info text
+    .item-info {
+      position: relative;
+      height: 350px;
+      text-decoration: none;
+      padding: 1.5em 2em;
+      white-space: normal;
+      h3 {
+        margin: 0.2em 0;
+        color: @gray-dark !important;
+      }
+      h4 {
+        margin: 0.2em 0;
+        color: @gray-dark !important;
+      }
+      p {
+        overflow: auto;
+        color: @p-color;
+        margin: 0;
+      }
+      .more {
+        padding: 0.2em 0.6em;
+        position: absolute;
+        background-color: lighten(@blue, 40%);
+        color: @blue;
+        bottom: 2em;
+        text-align: right;
+        border-radius: 2px;
+        .ease-out-cubic;
+        &:active {
+          background-color: @blue;
+          color: @white;
+        }
+      }
     }
   }
 }
