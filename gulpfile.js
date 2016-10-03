@@ -5,6 +5,7 @@ var fs = require('fs');
 var browserSync = require('browser-sync').create();
 var runSequence = require('run-sequence');
 var argv = require('minimist')(process.argv.slice(2));
+var path = require('path');
 
 
 var RELEASE = !!argv.release; // Minimize and optimize during a build?
@@ -37,7 +38,7 @@ var paths = {
     fonts: ['fonts/**/*'],
     images: ['images/**/*.png', 'images/**/*.jpg'],
     extras: ['.htcacess', 'crossdomain.xml', 'humans.txt', 'manifest.appcache', 'robots.txt', 'favicon.ico'],
-    pages: ['pages/**/*', 'layouts/**/*', 'partials/**/*', 'mixins/**/*'],
+    pages: ['pages/**/*'],
     data: 'data/**/*'
         // styles: ['styles/**/*.{css,less}']
 };
@@ -124,12 +125,13 @@ gulp.task('fonts', function() {
 
 // HTML pages + content data
 gulp.task('pages', function() {
-    return gulp.src(paths.pages[0], {
+    return gulp.src(paths.pages, {
             cwd: bases.dev,
             // base: bases.dev
         })
         .pipe($.if(/\.jade$/, $.jade({
             pretty: !RELEASE,
+            basedir: path.resolve(),
             locals: {
                 pkgs: pkgs,
                 googleAnalyticsID: GOOGLE_ANALYTICS_ID,

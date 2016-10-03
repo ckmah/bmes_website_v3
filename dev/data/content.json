@@ -9,7 +9,10 @@
       "meetTime": "Thursdays at 8:00pm",
       "meetLoc": "PFBH 291",
       "pageUrl": "/committees/beday.html",
-      "imageUrl": "/images/beday1.jpg"
+      "imageUrl": "/images/beday2.jpg",
+      "description": "Bioengineering Day gives seniors the chance to showcase their projects, gives graduate students to present their work, gives speakers the ability to share insights into their respective fields, and gives UC San Diego student teams the chance to test their smarts at the annual Bioengineering Day Quiz Bowl. With this cherished tradition, BMES works as a team with graduate students to create a day dedicated to the expansive field of Bioengineering.",
+      "related_events": ["beday", "labexpo"],
+      "resources": ["quizbowl"]
     },
     "labexpo": {
       "name": "Lab Expo",
@@ -20,7 +23,10 @@
       "meetTime": "Thursdays at 8:00pm",
       "meetLoc": "PFBH 291",
       "pageUrl": "/committees/labexpo.html",
-      "imageUrl": "/images/labexpo1.jpg"
+      "imageUrl": "/images/labexpo1.jpg",
+      "description": "",
+      "related_events": [],
+      "resources": []
     },
     "social": {
       "name": "Social",
@@ -31,7 +37,10 @@
       "meetTime": "Thursdays at 8:00pm",
       "meetLoc": "PFBH 291",
       "pageUrl": "/committees/social.html",
-      "imageUrl": "/images/home1.jpg"
+      "imageUrl": "/images/home1.jpg",
+      "description": "",
+      "related_events": [],
+      "resources": []
     },
     "outreach": {
       "name": "Outreach",
@@ -42,7 +51,10 @@
       "meetTime": "Thursdays at 8:00pm",
       "meetLoc": "PFBH 291",
       "pageUrl": "/committees/outreach.html",
-      "imageUrl": "/images/outreach1.jpg"
+      "imageUrl": "/images/outreach1.jpg",
+      "description": "",
+      "related_events": [],
+      "resources": []
     },
     "project": {
       "name": "Project Team",
@@ -53,7 +65,10 @@
       "meetTime": "Thursdays at 8:00pm",
       "meetLoc": "PFBH 291",
       "pageUrl": "/committees/projectteam.html",
-      "imageUrl": "/images/projectteam1.jpg"
+      "imageUrl": "/images/projectteam1.jpg",
+      "description": "",
+      "related_events": [],
+      "resources": []
     },
     "transmed": {
       "name": "Translational Medicine Day",
@@ -64,7 +79,10 @@
       "meetTime": "Thursdays at 8:00pm",
       "meetLoc": "PFBH 291",
       "pageUrl": "/committees/RD.html",
-      "imageUrl": "/images/bemed1.jpg"
+      "imageUrl": "/images/bemed1.jpg",
+      "description": "",
+      "related_events": [],
+      "resources": []
     },
     "mediatech": {
       "name": "Media and Technology",
@@ -74,7 +92,10 @@
       "meetTime": "Thursdays at 8:00pm",
       "meetLoc": "PFBH 291",
       "pageUrl": "/committees/mtech.html",
-      "imageUrl": "/images/mtech.jpg"
+      "imageUrl": "/images/mtech.jpg",
+      "description": "",
+      "related_events": [],
+      "resources": []
     }
   },
   "events": {
@@ -119,6 +140,13 @@
       "info": "The BMES Mentorship program hopes to promote a sense of community in the Bioengineering Department for both underclassmen and upperclassmen. For many new freshman or transfer students, the new UC San Diego college environment and the Bioengineering department can be overwhelming. The BMES Mentorship Program serves to facilitate this new adjustment by introducing people who share the same academic interests, while helping underclassmen get academic and social advice to guide them through their undergraduate studies.",
       "pageUrl": "/events/mentormentee.html",
       "imageUrl": "/images/mentormentee1.jpg"
+    }
+  },
+  "resources": {
+    "quizbowl": {
+      "name": "Quiz Bowl Application",
+      "deadline": "4/8/2016 at 11:59pm",
+      "link": "https://docs.google.com/forms/d/1fKM1c4T7G0nsJCRwmyMrVgGvrmxiMXh90BcAT46FU-Y/viewform"
     }
   }
 }

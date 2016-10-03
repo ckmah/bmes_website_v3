@@ -1,0 +1,28 @@
+extends /dev/layouts/default
+include /dev/mixins/mixins
+
+append styles
+  link(rel='stylesheet', type='text/css', href='/css/committee_subpages.css')
+
+append vars
+    - var comm = content.committees.beday
+    - var bgUrl = comm.imageUrl
+
+block content
+    .well
+      code Meeting Times: #{comm.meetTime} in #{comm.meetLoc}
+    .row.row-custom
+      h3 About
+      p #{comm.description}
+    .related-events.col-xs-12
+        for event in comm.related_events
+            +related-event-card(event)
+    .row.row-custom
+    .application-links
+      h3 Resources
+      p
+        | All related documents, applications, forms, and surveys to this committee can be found in this section.
+      // row
+      .row
+        for res in comm.resources
+            +resource-card(res)

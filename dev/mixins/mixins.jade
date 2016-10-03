@@ -22,3 +22,20 @@ mixin events-card(group)
         h5 #{group.setting}
         br
         p #{group.info}
+
+mixin related-event-card(event)
+  - var ev = content.events[event]
+
+    a.item.col-md-4(href="#{ev.pageUrl}")
+      .item-inner.card(style="background-image:url('#{ev.imageUrl}')")
+        h4 #{ev.name}
+        .scrim-top
+
+mixin resource-card(res)
+  - var resource = content.resources[res]
+  a.app.col-sm-4(href='#{resource.link}', target='_blank')
+    .app-inner.card
+      h4 #{resource.name}
+      br
+      strong Application Deadline:
+      |  #{resource.deadline}
