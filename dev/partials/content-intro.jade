@@ -4,7 +4,7 @@ block vars
   - var subtitle = 'Subtitle'
   - var maintext = 'Main text'
   - var bgUrl = '/images'
-  //- bubbles key = text, value = href
+  //- bubbles key = label, value = href
   - var bubbles = {}
 
 #intro.jumbotron(style="background-image: url('/images/overlay.png'), url('#{bgUrl}');")
@@ -12,7 +12,7 @@ block vars
     h1 #{title}
     h4 #{subtitle}
     br
-    each link, label in bubbles
+    each label, link in bubbles
       a.officer-bubble(href='#{link}', target='_blank') #{label}
     p#main-text #{maintext}
   a#scroll-next(data-scroll='', href='#content')
