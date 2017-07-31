@@ -3,10 +3,16 @@ extends /dev/layouts/default
 block title
   title BMES | UCSD
 
-append styles
-  link(rel='stylesheet', type='text/css', href='/css/home.css')
+//why does uncommenting this cause issues
+//block vars
+//  - var bgUrl = '/images/cover.jpg'
 
+append styles
+  link(rel='stylesheet', type='text/css', href='/css/home.css')  	
 append vars
   - var title = 'Biomedical Engineering Society'
   - var subtitle = 'University of California, San Diego'
   - var maintext = 'The Biomedical Engineering Society (BMES) at the University of California, San Diego (UCSD) is dedicated to enriching the undergraduate experience for those in the Department of Bioengineering and for those interested in Biomedical Engineering by fostering personal growth and professional development. We encourage undergraduates to get involved with their education and start making a difference today!'
+
+block intro
+  include ../partials/jumbotron

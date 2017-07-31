@@ -1,0 +1,10 @@
+extends /dev/layouts/default
+
+block title
+  title BMES Calendar
+
+append styles
+  link(rel='stylesheet', type='text/css', href='/css/calendar.css')
+
+block content
+  iframe(src="https://calendar.google.com/calendar/embed?src=bmes.ucsandiego@gmail.com&ctz=America/Los_Angeles&pli=1")

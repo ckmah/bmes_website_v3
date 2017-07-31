@@ -1,0 +1,11 @@
+#intro.jumbotron(style="background-image: url('/images/overlay.png'), url('#{bgUrl}');")
+  #intro-text.container
+    h1 #{title}
+    h4 #{subtitle}
+    br
+
+    each link, officer in bubbles
+      a.officer-bubble(href='#{link}', target='_blank') #{officer}
+    p#main-text #{maintext}
+  a#scroll-next(data-scroll='', href='#content')
+    span.glyphicon.glyphicon-chevron-down

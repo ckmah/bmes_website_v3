@@ -12,13 +12,13 @@ HOMEPAGE FORMATTING
     OFFICER PICTURES
 ***/
 /******************** CAROUSEL ********************/
-#event-carousel {
+#event-carousel-b {
   height: 100vh;
   position: relative;
     @media (min-width: 768px) {
-    height: 70vh;
+    height: 70vh; 
   }
-  overflow: hidden;
+  overflow: visible;
 }
 .intro-text {
   text-align: center;
@@ -58,10 +58,13 @@ HOMEPAGE FORMATTING
 .carousel-inner {
   position: absolute;
   height: 100%;
+  bottom: 0%; //this is absolutely necessary for carousel to work, no idea why
+  z-index: 9;
   .item {
     position: absolute;
     height: 100%;
     width: 100%;
+    //these are default images
     &:nth-child(1) {
       background-image: url("/images/overlay.png"), url("/images/lunchbythebear1.jpg");
     }
@@ -135,6 +138,16 @@ h3 {
   }
 }
 
+.img-container {
+    //float: left;
+    img {
+      margin: 0 auto !important;
+      max-height: 400px;
+      padding: 0;
+      .box-shadow(0, 0, 5px, rgba(0, 0, 0, 0.5));
+    }
+  }
+  
 /******************** EVENT SCHEDULES ********************/
 .datagrid {
   background: @white; 

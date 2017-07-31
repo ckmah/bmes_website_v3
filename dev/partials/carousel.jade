@@ -1,0 +1,21 @@
+event#event-carousel.carousel.slide(data-ride='carousel', data-pause='hover')
+  .container.intro-text
+    h2 #{ev.name}
+    h4 #{ev.setting}
+    br
+    //btn-block.col-md-6.col-xs-12
+    a.register-bubble(href='#{ev.link}', target='_blank') #{button}
+  // Indicators
+  ol.carousel-indicators
+    li.active(data-target='#event-carousel', data-slide-to='0')
+    li(data-target='#event-carousel', data-slide-to='1')
+    li(data-target='#event-carousel', data-slide-to='2')
+  // Wrapper for slides
+  .carousel-inner(role='listbox')
+    // image 1
+    .item.active
+    // image 2
+    .item
+    // image 3
+    .item
+

@@ -1,0 +1,15 @@
+extends /dev/layouts/committee_subpages
+
+block title
+    title Social Committee - BMES | UCSD
+
+append styles
+  link(rel='stylesheet', type='text/css', href='/css/committees/social.css')
+
+append vars
+  - var comm = content.committees.social
+  - var bgUrl = comm.imageUrl
+  - var bubbles = comm.officers
+  - var title = "Social Committee"
+  - var subtitle = ''
+  - var maintext = ''

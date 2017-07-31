@@ -1,0 +1,97 @@
+extends /dev/layouts/event_subpages
+
+block title
+    title Lab Expo - BMES | UCSD
+
+append vars
+  - var title = 'Title'
+  - var subtitle = 'Subtitle'
+  - var maintext = 'Main text'
+  - var bgUrl = '/images/cover.jpg'
+  - var button = 'SUBMIT RESUME'
+  - var ev = content.events.labexpo //should be more OO
+
+append styles
+  link(rel='stylesheet', type='text/css', href='/css/events/labexpo.css')  
+
+block eventintro
+  .row
+    .col-md-12
+      hr
+      h3(style='text-align: center') About
+      hr
+      h5
+        | Lab Expo 2017 will hope to convey a deep-seated appreciation of science to its attendees and stress the importance of an interdisciplinary mindset in science. Through presentations and personal interactions and discussions, Lab Expo will connect researchers and students, multiple STEM disciplines, and students from non STEM backgrounds.
+        //a(href='link here') linked thing here
+      p
+        | We hope to expand the target audience of this event from STEM majors to all UC San Diego students. Allowing science to become accessible and digestible for the general public is essential to science’s continuing advancement. The present day funding cuts that characterize the state of modern science are significantly worrying and represent a lack of public fluency in the importance of the scientific method. Our event hopes to stand in stalwart opposition to such blind ignorance, if we can even pass on a fraction of our passion to a non scientist, we will have accomplished our goal.
+
+        | There exists an unfortunate and arbitrary schism between the different branches of science. Biologists, chemists, and physicists tend to close themselves off from each other for no apparent reason. Each field of science is after the same fundamental truth: What are the set of rules that govern our Universe? Understanding and appreciating such nuance is necessary to make the revolutionary advancements that propel our species to new heady heights. Lab Expo will seek to foster and nurture these interdisciplinary connections and allow both presenters and attendees alike to open their minds to other disciplines.
+      p
+
+block location
+  .row
+    hr
+    h3(style='text-align: center') Location
+    hr
+    .col-md-6
+      .img-container
+        img.img-responsive(src='/images/pc.jpg')
+    .col-md-6
+      h5
+        | This year's event will be held in PC Ballroom East
+        a(href='http://universitycenters.ucsd.edu/documents/UCen_PCFloorPlanBW.pdf') 
+        | , a central venue on the University of California, San Diego campus.
+      br
+
+block schedule
+  //event schedule
+  .row
+  hr
+  h3(style='text-align: center') Event Schedule
+  hr
+  +schedule(ev)
+  //.row
+  //hr
+  //+expo-card(ev)
+ 
+block pagebubbles
+  //links
+  .row
+  hr
+  div(style='text-align: center')
+    a.register-bubble(href='/comingsoon.html', target='_blank') REGISTER NOW
+    a.register-bubble(href='/comingsoon.html', target='_blank') BECOME A SPONSOR
+    a.register-bubble(href='/comingsoon.html', target='_blank') VOLUNTEER
+  hr
+
+block contact
+  // contact area
+  .row
+    h3(style='text-align: center') Contact
+    h5(style='text-align: center')
+      | If you have any questions about the event, feel free to contact one of our planning chairs!
+    // officer 1
+    .col-md-6
+      .officer.col-xs-12
+        .img-container.col-md-2
+        .img-container.col-md-8.col-xs-12
+          img.img-responsive(src='/images/officers/arya1.jpg')
+        .img-container.col-md-2
+        .officer-info.col-md-12.col-xs-12
+          h5(style='text-align: center') Arya Kaul
+          h5(style='text-align: center')
+            a(href='mailto:a1kaul@ucsd.edu') a1kaul@ucsd.edu
+    // officer 2
+    .col-md-6
+      .officer.col-xs-12
+        .img-container.col-md-2
+        .img-container.col-md-8.col-xs-12
+          img.img-responsive(src='/images/officers/katherinen1.jpg')
+        .img-container.col-md-2
+        .officer-info.col-md-12.col-xs-12
+          h5(style='text-align: center') Katherine Ngyuen
+          h5(style='text-align: center')
+            a(href='mailto:khn001@ucsd.edu') khn001@ucsd.edu
+    br
+    // end officer contact

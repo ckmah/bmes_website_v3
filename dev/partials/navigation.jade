@@ -1,7 +1,7 @@
 nav#nav.navbar.navbar-default.navbar-fixed-top(role='navigation')
   // Brand and toggle get grouped for better mobile display
   .navbar-header
-    button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1' aria-expanded='false')
+    button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
       span.sr-only Toggle navigation
       span.icon-bar
       span.icon-bar
@@ -9,8 +9,9 @@ nav#nav.navbar.navbar-default.navbar-fixed-top(role='navigation')
     a.navbar-brand(href='/index.html')
       img#logo(src='/images/bmes_logo.png')
       .name BMES
+
   // Collect the nav links, forms, and other content for toggling
-  #nav-collapse.collapse.navbar-collapse
+  #bs-example-navbar-collapse-1.collapse.navbar-collapse
     ul.nav.navbar-nav
       li.dropdown
         a.dropdown-toggle.disabled(href='/committees.html', data-toggle='dropdown', role='button', aria-expanded='false')
@@ -23,9 +24,9 @@ nav#nav.navbar.navbar-default.navbar-fixed-top(role='navigation')
           li: a(href='/committees/outreach.html') Outreach
           li: a(href='/committees/RD.html') Translational Medicine Day
           li: a(href='/committees/projectteam.html') Project Team
-          li: a(href='/committees/mtech.html') Media and Technology
+          li: a(href='/committees/freshman.html') Freshman
           li.divider
-          li: a(href='/committees/resources.html') Resources
+          li: a(href='/resources.html') Resources
       li.divider-vertical
       li.dropdown
         a.dropdown-toggle.disabled(href='/events.html', data-toggle='dropdown', role='button', aria-expanded='false')
@@ -34,13 +35,32 @@ nav#nav.navbar.navbar-default.navbar-fixed-top(role='navigation')
         ul.dropdown-menu(role='menu')
           li: a(href='/events/beday.html') Bioengineering Day
           li: a(href='/events/labexpo.html') Lab Expo
-          li: a(href='/events/beinspired.html') BE Inspired
           li: a(href='/events/panels.html') Industry &amp; Academia Panels
           li: a(href='/events/translationalmedicine.html') Translational Medicine Day
-          li: a(href='/events/mentormentee.html') Mentorship Program
+          li: a(href='/events/bengexp.html') Bioengineering Experience
           li.divider
-          li: a(href='/events/calendar.html') Calendar
+          li: a(href='/calendar.html') Calendar
       li.divider-vertical
+      li.dropdown
+        a.dropdown-toggle.disabled(href='/programs.html', data-toggle='dropdown', role='button', aria-expanded='false')
+          | Programs
+          span.caret
+        ul.dropdown-menu(role='menu')
+          li: a(href='/programs/xseed.html') BMES xSEED
+          li: a(href='/programs/ptresearch.html') Research Division
+          li: a(href='/programs/mentor.html') Mentorship Program
+          li.divider
+          li: a(href='/opportunities.html') Opportunities
+          li: a(href='/finances.html') Finances
+      li.divider-vertical
+      //li.visible-xs.dropdown
+      //  a.dropdown-toggle.disabled(data-toggle='dropdown', role='button', aria-expanded='false')
+      //    | Other
+      //    span.caret
+      //  ul.dropdown-menu(role='menu')
+      //    li: a(href='/opportunities.html') Opportunities
+      //    li: a(href='/finances.html') Finances
+      //li.visible-xs.divider-vertical
       li.dropdown
         a.dropdown-toggle.disabled(href='/contact.html', data-toggle='dropdown', role='button', aria-expanded='false')
           | Contact

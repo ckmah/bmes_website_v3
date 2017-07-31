@@ -1,0 +1,13 @@
+extends /dev/layouts/default
+
+block intro
+  include ../partials/jumbotron
+
+append vars
+  - var title = 'Coming Soon'
+  - var subtitle = 'This page is under construction!'
+  - var bgUrl = '/images/lunchbythebear1.jpg'
+  - var maintext = ''
+
+append styles
+  link(rel='stylesheet', type='text/css', href='/css/events/comingsoon.css')

@@ -1,3 +1,6 @@
+append styles
+  link(rel='stylesheet', type='text/css', href='/css/events_bmes.css')
+
 mixin committees-card(group)
   .committee-item.col-xs-6.col-md-4
     .item-inner
@@ -5,23 +8,75 @@ mixin committees-card(group)
         .scrim-bottom
         h3 #{group.name}
       .item-info
-        for officer in group.officers
-          a.officer-bubble(href='/contact.html') #{officer}
+        for link, officer in group.officers
+          a.officer-bubble(href='#{link}') #{officer}
         br
         h5 Weekly Meetings
         p #{group.meetTime} @#{group.meetLoc}
         br
-        a.more(href="#{pageUrl}") Learn more
+        a.more(href="#{group.pageUrl}") Learn more
+
+//finish
+mixin transmed-card(speaker)
+  .transmed-card.app.col-md-12(href='dfd', target='_blank')
+    .app-inner.card
+      h5 Name
+      br
+      br
+      strong Application Deadline:
+      |  deadline
+
+mixin officer-card(officer)
+  .officer.col-xs-12
+    .img-container.col-md-4.col-xs-12
+      img.img-responsive(src='/images/officers/#{officer.img}')
+    // EBOARD DESCRIPTIONS
+    .officer-info.col-md-8.col-xs-12
+      h3 #{officer.name}
+      h5
+        | #{officer.title} | 
+        a(href='mailto:"#{officer.email}"') #{officer.email}
+      p
+        | #{officer.desc}
+        
+mixin schedule(event)
+  .datagrid
+    table
+      tbody
+        for seg, i in event.schedule
+            if i % 2 === 0
+              tr
+                td.time
+                  h5 #{seg[0]}
+                td
+                  h5 #{seg[1]}
+            else if i % 2 === 1
+              tr.alt
+                td.time
+                  h5 #{seg[0]}
+                td
+                  h5 #{seg[1]}
+
+mixin alumni-card(alum)
+  .item.col-xs-12
+    .item-inner
+      .item-inner.col-xs-12
+        .img-container.col-xs-12.col-md-4
+          img.img-responsive(src="#{alum.url}")
+        .item-info.col-xs-12.col-md-8
+          h3 #{alum.name} | #{alum.year}
+          p #{alum.info}
 
 mixin events-card(group)
   .item.col-xs-12
-    a(href="#{group.pageUrl}").item-inner.col-xs-12
-      .img-container.col-xs-12.col-md-4(style="background-image:url('#{group.imageUrl}')")
-      .item-info.col-md-8
-        h3 #{group.name}
-        h5 #{group.setting}
-        br
-        p #{group.info}
+    .item-inner
+      a(href="#{group.pageUrl}").item-inner.col-xs-12
+        .img-container.col-xs-12.col-md-4(style="background-image:url('#{group.imageUrl}')")
+        .item-info.col-xs-12.col-md-8
+          h3 #{group.name}
+          h5 #{group.setting}
+          br
+          p #{group.info}
 
 mixin related-event-card(event)
   - var ev = content.events[event]
@@ -29,6 +84,14 @@ mixin related-event-card(event)
     a.item.col-md-4(href="#{ev.pageUrl}")
       .item-inner.card(style="background-image:url('#{ev.imageUrl}')")
         h4 #{ev.name}
+        .scrim-top
+
+mixin related-program-card(program)
+  - var pr = content.programs[program]
+
+    a.item.col-md-4(href="#{pr.pageUrl}")
+      .item-inner.card(style="background-image:url('#{pr.imageUrl}')")
+        h4 #{pr.name}
         .scrim-top
 
 mixin resource-card(res)

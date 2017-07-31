@@ -36,7 +36,7 @@ var paths = {
     styles: ['styles/*.less', 'styles/**/*.less', 'styles/*.css'],
     // html: ['*.html', '**/*.html'],
     fonts: ['fonts/**/*'],
-    images: ['images/**/*.png', 'images/**/*.jpg'],
+    images: ['images/**/*.png', 'images/**/*.jpg', 'images/**/*.pdf'],
     extras: ['.htcacess', 'crossdomain.xml', 'humans.txt', 'manifest.appcache', 'robots.txt', 'favicon.ico'],
     pages: ['pages/**/*'],
     data: 'data/**/*'

@@ -1,0 +1,209 @@
+extends /dev/layouts/event_subpages
+
+block title
+    title Translational Medicine Day - BMES | UCSD
+
+append vars
+  - var title = 'Title'
+  - var subtitle = 'Subtitle'
+  - var maintext = 'Main text'
+  - var bgUrl = '/images/cover.jpg'
+  - var ev = content.events.transmed //should be more OO
+
+append styles
+  link(rel='stylesheet', type='text/css', href='/css/events/bemed.css')
+
+block eventintro
+  .row
+    .col-md-12
+      hr
+      h3(style='text-align: center') About
+      hr
+      h5
+        | Translational medicine is 
+        a(href='https://www.ucsf.edu/about/translational-medicine', target='_blank') the conversion of scientific discovery into health improvement, 
+        | bringing the "bench to bedside" by innovating new cures, integrating these techniques into practice, and inspiring future doctors and scientists to always work towards patient centered clinical applications.
+      h5
+        | Translational Medicine Day (TMD) will bridge the discussions occurring in San Diego’s vibrant and expansive research community with the future of cutting edge healthcare. TMD will gather students, professors, and industry together to enhance the heart of this discussion. The event will host speakers, panels, medical device tours, industry device demonstrations, and clinical bioengineering posters that seek to demonstrate the potential of translational research in medicine and also provide students a look into opportunities to contribute to the field in the future.
+  .row
+    hr
+    h3(style='text-align: center') Speakers
+    hr
+    .col-md-6.col-xs-12
+      h5
+        | Dr. 
+        b Perry Nisen
+        |  is the CEO and Donald Bren Chief Executive Chair of the Sanford Burnham Prebys Medical Discovery Institute in La Jolla. His main objective is to oversee the execution of the institutes 10-year strategic vision to more quickly translate basic research discoveries into novel treatments that improve human health. As an MD/PhD, throughout his career he has held many integral positions in the field of translational medicine, including the role of Senior Vice President at GlaxoSmithKline where he was integral in the discovery, development, and commercialization of a vast portfolio of drugs. At TMD 2017 he will be sharing his vast insight in the field of Translational Medicine and how the future of medicine will be grounded in this important movement in patient-centered healthcare.
+    .col-md-6.col-xs-12
+      .img-container
+        img.img-responsive(src='/images/perrynisen1.jpg' style="width: 100%")
+    hr
+  .row
+    .col-md-3.col-xs-12
+      .img-container
+        img.img-responsive(src='/images/tmd_cohen.jpg')
+    .col-md-3.col-xs-12
+      h7
+        b Ezra Cohen
+        | , MD, is an internationally renowned translational researcher, and has been acknowledged for his contribution to the National Cancer Institute Task Force on PI3 Kinase/AKT/mTOR Targeting. Dr. Cohen has led an independently funded laboratory interested in mechanisms of action of novel therapeutics. His recent National Institutes of Health-funded work in the study of epidermal growth factor receptor inhibitors in head and neck cancer has contributed to the understanding of the biology of this critical signaling network, integration of these agents into standard of care, and definition of mechanisms to overcome resistance.
+    .col-md-3.col-xs-12
+      .img-container
+        img.img-responsive(src='/images/tmd_bloss.jpg')
+    .col-md-3.col-xs-12
+      h7
+        | As advances in sequencing technology have allowed patients to have access to their own genetic information, how does this information impact them? How does a patient translate this information into something useful? Dr. 
+        b Cinnamon Bloss
+        | , who is currently an assistant professor in the Department of Psychiatry can help answer these questions as her research focuses on the individual and societal impacts of emerging biomedical technologies. Some of her major projects include direct-to-consumer genomics, clinical genome sequencing, biosensing and mobile health, and personal health big data. Prior to joining UCSD, Dr. Bloss was the Director of Social Sciences and Bioethics at the Scripps Translational Science Institute. 
+  hr
+  .row
+    .col-md-3.col-xs-12
+      h7
+        | Dr. 
+        b Daniel Goble 
+        | received his PhD degree from the University of Michigan and is currently an associate professor at San Diego State University. As the founder of Balance Tracking Systems Inc., Dr. Goble’s interests are in the fields of Sensorimotor Neuroscience and Biomechanics with an emphasis on the studies of human proprioception (i.e. body position awareness) and postural control (i.e. balance). His company provides a low cost solution for balance assessment in many domains. In addition, Dr. Goble teaches a series of graduate-level classes focusing on clinical research skills for future professionals of the biomedical field.
+    .col-md-3.col-xs-12
+      .img-container
+        img.img-responsive(src='/images/tmd_goble.jpg')
+    .col-md-3.col-xs-12
+      h7
+        | Dr. 
+        b Christina Holub 
+        | received her MPH from Yale University (Epidemiology, Social and Behavioral Sciences focus) and PhD in Health Behavior from the University of North Carolina at Chapel Hill. Dr. Holub’s research focuses on developing health promotion interventions to reduce health disparities through academic-community partnerships. Currently, Dr. Holub leads a pilot exercise study for Pacific Islanders in San Diego, funded by UCSD's Clinical and Translational Research Institute.
+    .col-md-3.col-xs-12
+      .img-container
+        img.img-responsive(src='/images/tmd_holub.jpg')
+  hr
+  .row
+    .col-md-3.col-xs-12
+      h7
+        b Kirk Hutchison
+        | is the CEO of Worldcare Technologies, a student-led biotechnology startup dedicated to expanding access to affordable medical technology worldwide. His current goal is overseeing the successful implementation of Worldcare’s HIV viral load testing system for use in low resource settings. As a current UCSD undergraduate, Kirk is passionate about student engagement and wants to continue bringing together students, faculty, and business after graduation. At TMD 2017 he will share his experiences working with faculty researchers, balancing work and classes, and guiding a project from early stages into real world implementation.
+    .col-md-3.col-xs-12
+      .img-container
+        img.img-responsive(src='/images/tmd_hutchison.jpg')
+  hr  
+  h3(style='text-align: center') M.D./Ph.D.
+  hr
+  .row
+    .col-md-3.col-xs-12
+      h7
+        | Dr. 
+        b Adam Engler 
+        | is currently an Associate Professor in the UC San Diego Department of Bioengineering as well as a resident scientist at the Sanford Consortium for Regenerative Medicine. Dr. Engler received his PhD from the University of Pennsylvania, where he studied how the stiffness of the extracellular matrix regulated stem cell fate. He currently researches how physical and chemical properties of the niche influence stem cell function, and misregulate muscle function and heart performance during disease and aging. Dr. Engler is currently the Chair of Admissions for the UC San Diego Medical Scientist Training Program.
+    .col-md-3.col-xs-12
+      .img-container
+        img.img-responsive(src='/images/tmd_engler.jpg')
+    .col-md-3.col-xs-12
+      h7
+        | Dr. 
+        b Leanne Jones 
+        | is currently a Professor in the Department of Molecular, Cell, and Developmental Biology at the University of California, Los Angeles. She received her PhD in Microbiology and Molecular Genetics from Harvard University, and afterwards, did her postdoctoral at Stanford University, focusing on characterizing the role that extrinsic factors play in regulating stem cell behavior and tissue homeostasis. Dr. Jones is currently the Director of the UCLA Medical Scientist Training Program.
+    .col-md-3.col-xs-12
+      .img-container
+        img.img-responsive(src='/images/tmd_jones.jpg')
+  hr
+  .row
+    .col-md-3.col-xs-12
+      .img-container
+        img.img-responsive(src='/images/tmd_monuki.jpg')
+    .col-md-3.col-xs-12
+      h7
+        | Dr. 
+        b Edwin Monuki 
+        | is currently Warren L. Bostick Chair of Pathology at UC Irvine. After receiving his MD/PhD from UC San Diego, Dr. Monuki went on to complete his Anatomic Pathology and Neuropathology residency and clinical fellowship at Massachusetts Gen, Brigham and Women’s, and Children’s Hospital in Boston, Massachusetts. Currently, he studies forebrain development and translational applications using embryonic, induced-pluripotent, and neural stem cells. Dr. Monuki is the Associate Director of the UC Irvine Medical Scientist Training Program.
+    .col-md-3.col-xs-12
+      .img-container
+        img.img-responsive(src='/images/tmd_hsiao.jpg')
+    .col-md-3.col-xs-12
+      h7
+        | Dr. 
+        b Albert Hsiao 
+        | is an Assistant Professor of Radiology and the Associate Director of Cardiovascular Diseases for the Center for Translational Imaging and Personalized Medicine (CTIPM). Dr. Hsiao completed his MD/PhD at UC San Diego, after which he completed his residency and fellowship at Stanford University. In addition to being a cardiovascular and interventional radiologist, Dr. Hsiao studies cardiovascular mechanics. In 2012, Dr. Hsiao founded the company Morpheus, now called Arterys, which is a Medical Imaging Cloud Platform that aims to apply an imaging technique known as 4D Flow in the clinic. Dr. Hsiao also currently sits on the Admissions Panel for the UC San Diego Medical Scientist Training Program.
+  hr
+  .row
+    .col-md-3.col-xs-12
+      h7
+        | Dr. 
+        b Gregory Daniels 
+        | is a board-certified oncologist who coordinates care for patients with melanoma, skin cancers, and head and neck cancers. He received his medical degree from Keck School of Medicine of USC in 1999. Much of his research work has focused on understanding the link between autoimmunity and tumor immunity in developing more effective and less toxic immune-stimulatory approaches for patients with melanoma.
+
+    .col-md-3.col-xs-12
+      .img-container
+        img.img-responsive(src='/images/tmd_daniels.jpg')
+    .col-md-3.col-xs-12
+      h7
+        | Dr. 
+        b David Piccioni 
+        | is a board-certified neuro-oncologist and neurologist who specializes in primary metastatic tumors of the brain and nervous system. Dr. Piccioni completed his MD and PhD in neuroscience at the State University of New York at Buffalo. He is one of only about 150 people in the U.S who are board-certified in neuro-oncology, which along with his board-certification in neurology and clinical pharmacology promotes advanced, patient-centered care. As an assistant professor in the UC San Diego School of Medicine, his research focuses on molecular and genetic profiling of individual tumors and using this knowledge to develop personalized target therapy.
+    .col-md-3.col-xs-12
+      .img-container
+        img.img-responsive(src='/images/tmd_piccioni.jpg')
+
+  .row
+    hr
+    h3(style='text-align: center') Location
+    hr
+    .col-md-6
+      .img-container
+        img.img-responsive(src='/images/telemed1.jpg' style="width: 100%")
+    .col-md-6
+      h5
+        | This year's event will be held in the 
+        a(href='http://telemedicine.ucsd.edu/index.cfm?p=home') Telemedicine Building 
+        | in the School of Medicine. (
+        a(href='http://telemedicine.ucsd.edu/index.cfm?p=directions') directions
+        | /
+        a(href='https://www.google.com/maps/place/Medical+Education+and+Telemedicine+Building/@32.8753342,-117.2370172,17z/data=!3m1!4b1!4m5!3m4!1s0x80dc06c57d470973:0xb2337403bf480754!8m2!3d32.8753342!4d-117.2348285') Google Maps
+        | )
+      p 
+      strong Driving Directions          
+      ul
+        li From I-5 North/South, exit onto La Jolla Village Drive West          
+        li Turn right onto Villa La Jolla Drive
+        li Up the hill about 0.3 miles (stay in left lane as the right lane must turn)          
+        li Go past the first light (the VA center is on your right)
+        li At the next light, drive straight into the Gilman Parking Structure or Parking lot P602.
+        li Walk through parking lot and lawn to the Telemedicine building.
+
+block schedule
+  .row
+  hr
+  h3(style='text-align: center') Event Schedule
+  hr
+  //+schedule(ev)
+  .col-md-12
+    img(src='/images/tmd_schedule.jpg' style="width: 100%; margin: auto;")
+
+block pagebubbles
+  //links
+  .row
+  hr
+  div(style='text-align: center')
+    a.register-bubble(href='https://tmd2017.eventbrite.com', target='_blank') REGISTER NOW
+    a.register-bubble(href='https://tmd2017.eventbrite.com', target='_blank') VOLUNTEER
+  hr
+
+block contact
+  // contact area
+  .row
+    h3(style='text-align: center') Contact
+    h5(style='text-align: center')
+      | If you have any questions about sponsorship or about the event, feel free to contact one of the planning chairs!
+    // officer 1
+    .col-md-12
+      .officer.col-xs-12
+        .img-container.col-md-12
+          img.img-responsive(src='/images/officers/tmdpair1.jpg' style='width: 600px;')
+    .col-md-6
+      .officer-info.col-md-12.col-xs-12
+          h5(style='text-align: center') Reysha Patel
+          h5(style='text-align: center')
+            a(href='mailto:rep002@ucsd.edu') rep002@ucsd.edu
+    // officer 2
+    .col-md-6
+      .officer-info.col-md-12.col-xs-12
+          h5(style='text-align: center') Yajur Maker
+          h5(style='text-align: center')
+            a(href='mailto:ymaker@eng.ucsd.edu') ymaker@eng.ucsd.edu
+    br
+    // end officer contact

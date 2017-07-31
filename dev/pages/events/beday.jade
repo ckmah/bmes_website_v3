@@ -1,0 +1,122 @@
+extends /dev/layouts/event_subpages
+
+block title
+    title Bioengineering Day - BMES | UCSD
+
+append vars
+  - var title = 'Title'
+  - var subtitle = 'Subtitle'
+  - var maintext = 'Main text'
+  - var bgUrl = '/images/cover.jpg'
+  - var button = 'REGISTER'
+  - var ev = content.events.beday //should be more OO
+
+append styles
+  link(rel='stylesheet', type='text/css', href='/css/events/beday.css')  
+
+block eventintro
+  .row
+    hr
+    h3(style='text-align: center') About
+    hr
+    .col-md-7.col-xs-12
+      h5
+        | Bioengineering Day serves to celebrate UC San Diego's consistently top ranked bioengineering department, the current research by students, and the overall burgeoning field itself. The day-long event features various speakers, senior design project presentations, research seminars, and networking sessions. It is attended by well over 400 people each year, and is a great opportunity for undergraduates, graduate students, faculty, and members from industry to form valuable connections with one another.
+      h5
+        | This year, we have chosen the theme of diversity because we think that it is important to analyze the state of diversity in the field of bioengineering, and to create real solutions for actions we can take in the future to improve diversity across the field. We also believe that bioengineering has what it takes to lead the change with its interdisciplinary approach to engineering and medicine.
+
+        | At the end of Bioengineering Day each year, the final two rounds of UCSD’s Bioengineering Quiz Bowl take place. First the top two undergraduate teams go head-to-head for a prize, then the winning team has the opportunity to compete against a team of graduate students for another prize. Teams are composed of four undergraduate or graduate students. At least one member of each team must be a student enrolled in one of the four majors under the Bioengineering Department. If you are interested in registering a team to compete in Quiz Bowl 2017, 
+        a(href="fill", target="_blank") click here.
+    .col-md-5.col-xs-12
+      .img-container 
+        img.img-responsive(src='../images/bedaylogo.jpg')
+    br
+
+block location
+  .row
+    hr
+    h3(style='text-align: center') Location
+    hr
+    .col-md-6
+      .img-container
+        img.img-responsive(src='/images/telemed1.jpg')
+    .col-md-6
+      h5
+        | This year's event will be held in the 
+        a(href='http://telemedicine.ucsd.edu/index.cfm?p=directions') Telemedicine Building in the School of Medicine.
+      br
+      p 
+      strong Driving Directions          
+      ul
+        li From I-5 North/South, exit onto La Jolla Village Drive West          
+        li Turn right onto Villa La Jolla Drive
+        li Up the hill about 0.3 miles (stay in left lane as the right lane must turn)          
+        li Go past the first light (the VA center is on your right)
+        li At the next light, drive straight into the Gilman Parking Structure or Parking lot P602.
+        li Walk through parking lot and lawn to the Telemedicine building.
+
+block sponsor
+  .row#sponsor
+    .col-md-12
+      hr
+      h3(style='text-align: center') Sponsorship
+      hr
+      h5
+        | Bioengineering Day would not be possible without our generous sponsors. This important event unites faculty, alumni, students, and industry partners to showcase the progress and successes within our expanding bioengineering ecosystem. It is also a unique forum to optimize networking between you, as an industrial partner, and the bioengineering community here on campus. The undergraduate and graduate research presentations showcase the accomplishments of our students and provide opportunities for collaboration between you, alumni, faculty, and students.
+      h5
+        | Your sponsorship will be used to offset the event expenses and provide overall support of our bioengineering student organizations. With your sponsorship (which is 100% tax-deductible), your company name and logo will be included in the official event program, event printed materials and in the event website. In addition, your company will be recognized at the event opening remarks.  If you are interested in partnering with the bioengineering community as one of this year’s distinguished sponsors, take a look at our 
+        <a href="../images/beday.pdf">sponsorship packet.</a>
+
+block schedule
+  //event schedule
+  .row
+  hr
+  h3(style='text-align: center') Event Schedule
+  hr
+  //+schedule(ev)
+  .col-md-12
+    img(src='/images/beday_schedule.jpg' style="width: 100%; margin: auto;")
+
+  block sponsor
+ 
+block pagebubbles
+  //links
+  .row
+  hr
+  div(style='text-align: center')
+    a.register-bubble(href='https://goo.gl/forms/6tuF2HsDyXgNNwN32', target='_blank') QUIZ BOWL SIGNUPS
+    a.register-bubble(href='https://giveto.ucsd.edu/make-a-gift?id=5382d73c-30fc-44c5-87e1-6dcea8018654', target='_blank') BECOME A SPONSOR
+    a.register-bubble(href='https://beday17.eventbrite.com', target='_blank') VOLUNTEER
+  hr
+
+block contact
+  // contact area
+  .row
+    h3(style='text-align: center') Contact
+    h5(style='text-align: center')
+      | If you have any questions about the event, feel free to contact one of our planning chairs! 
+    // officer 1
+    .col-md-6
+      .officer.col-xs-12
+        .img-container.col-md-2
+        .img-container.col-md-8.col-xs-12
+          img.img-responsive(src='/images/officers/alexandra1.jpg')
+        .img-container.col-md-2
+        .officer-info.col-md-12.col-xs-12
+          h5(style='text-align: center') Alexandra Kasper
+          h5(style='text-align: center')
+            a(href='mailto:aikasper@ucsd.edu') aikasper@ucsd.edu
+    // officer 2
+    .col-md-6
+      .officer.col-xs-12
+        .img-container.col-md-2
+        .img-container.col-md-8.col-xs-12
+          img.img-responsive(src='/images/officers/irmak1.jpg')
+        .img-container.col-md-2
+        .officer-info.col-md-12.col-xs-12
+          h5(style='text-align: center') Irmak Ipekci
+          h5(style='text-align: center')
+            a(href='mailto:iipekci@ucsd.edu') iipekci@ucsd.edu
+    br
+    // end officer contact
+

@@ -2,116 +2,147 @@
   "committees": {
     "beday": {
       "name": "Bioengineering Day",
-      "officers": [
-        "Julie Yip",
-        "Bryan Yeh"
-      ],
-      "meetTime": "Thursdays at 8:00pm",
-      "meetLoc": "PFBH 291",
+      "officers": {
+        "Alexandra Kasper":"/content.html",
+        "Irmak Ipekci":"/content.html"
+      },
+      "meetTime": "Mondays at 8:00pm",
+      "meetLoc": "PFBH 391",
       "pageUrl": "/committees/beday.html",
       "imageUrl": "/images/beday2.jpg",
       "description": "Bioengineering Day gives seniors the chance to showcase their projects, gives graduate students to present their work, gives speakers the ability to share insights into their respective fields, and gives UC San Diego student teams the chance to test their smarts at the annual Bioengineering Day Quiz Bowl. With this cherished tradition, BMES works as a team with graduate students to create a day dedicated to the expansive field of Bioengineering.",
-      "related_events": ["beday", "labexpo"],
+      "related_events": ["beday"],
+      "related_programs":[],
       "resources": ["quizbowl"]
     },
     "labexpo": {
       "name": "Lab Expo",
-      "officers": [
-        "Christopher Um",
-        "Jonathan Wickes"
-      ],
-      "meetTime": "Thursdays at 8:00pm",
-      "meetLoc": "PFBH 291",
+      "officers": {
+        "Arya Kaul":"/content.html",
+        "Katherine Nguyen":"/content.html"
+      },
+      "meetTime": "Thursdays at 9:00pm",
+      "meetLoc": "PFBH 491",
       "pageUrl": "/committees/labexpo.html",
       "imageUrl": "/images/labexpo1.jpg",
       "description": "",
-      "related_events": [],
-      "resources": []
+      "related_events": ["labexpo"],
+      "related_programs": [],
+      "resources": ["exposignup"]
     },
     "social": {
       "name": "Social",
-      "officers": [
-        "Shouvik Gosh",
-        "Gladys Ornelas"
-      ],
-      "meetTime": "Thursdays at 8:00pm",
-      "meetLoc": "PFBH 291",
+      "officers": {
+        "Kathy Kang":"/content.html",
+        "Nikki Chan":"/content.html"
+      },
+      "meetTime": "None",
+      "meetLoc": "",
       "pageUrl": "/committees/social.html",
       "imageUrl": "/images/home1.jpg",
-      "description": "",
+      "description": "We hope to provide members and non-members with fun social activities to foster connections between the people interested in our organization. Our Social Chairs work to plan activities that will give people the opportunity to separate themselves from school and take a break from all the studying! Additionally, we also plan events to give people the opportunity to learn new skills -- while having fun doing so!",
       "related_events": [],
-      "resources": []
+      "related_programs": ["mentor"],
+      "resources": ["points", "mentorsignup"]
     },
     "outreach": {
       "name": "Outreach",
-      "officers": [
-        "Kathryn Kang",
-        "Alexandra Muise"
-      ],
-      "meetTime": "Thursdays at 8:00pm",
+      "officers": {
+        "Juhi Madan":"/content.html",
+        "Katherine Lowe":"/content.html"
+      },
+      "meetTime": "Mondays at 7:30pm",
       "meetLoc": "PFBH 291",
       "pageUrl": "/committees/outreach.html",
       "imageUrl": "/images/outreach1.jpg",
-      "description": "",
+      "description": "The goal for our Outreach Committee is to not only introduce bioengineering to the upcoming generation of K-12 students, but also to give back to the local San Diego community. Join us in our journey to reach out to people who need our help, and to initiate the passions for science, technology, engineering, and mathematics in the younger crowd!",
       "related_events": [],
+      "related_programs": [],
       "resources": []
     },
-    "project": {
+    "projectteam": {
       "name": "Project Team",
-      "officers": [
-        "Benjamin Yang",
-        "Sumit Dan"
-      ],
-      "meetTime": "Thursdays at 8:00pm",
-      "meetLoc": "PFBH 291",
+      "officers": {
+        "Benjamin Yang":"/content.html",
+        "Shoun Matsuka":"/content.html"
+      },
+      "meetTime": "Wednesdays at 7:00pm",
+      "meetLoc": "PFBH 391",
       "pageUrl": "/committees/projectteam.html",
       "imageUrl": "/images/projectteam1.jpg",
-      "description": "",
+      "description": "The Project Team Committee is dedicated to the Biomedical Research and Competition sector of our organization. Every year, we hope to give undergraduate students the ability to attain hands-on experience with laboratory techniques in academic departments ranging from Mechanical Engineering to Bioengineering to the UC San Diego Medical School. Additionally, we hope to get people involved in research by providing exciting projects developed by partnering faculty -- even in projects that might be submitted into national biomedical entrepreneurship competitions like BMEidea and BMEstart!",
       "related_events": [],
+      "related_programs": ["ptresearch", "xseed"],      
       "resources": []
     },
     "transmed": {
       "name": "Translational Medicine Day",
-      "officers": [
-        "Yajur Maker",
-        "Vincent Hu"
-      ],
-      "meetTime": "Thursdays at 8:00pm",
-      "meetLoc": "PFBH 291",
+      "officers": {
+        "Yajur Maker":"/content.html",
+        "Reysha Patel":"/content.html"
+      },
+      "meetTime": "Concluded for 2017",
+      "meetLoc": "",
       "pageUrl": "/committees/RD.html",
       "imageUrl": "/images/bemed1.jpg",
-      "description": "",
-      "related_events": [],
+      "description": "Translational Medicine is a new discipline in biomedical research that aims to expedite the discovery of new diagnostic tools and treatments by using a multidisciplinary, highly collaborative, \"bench-to-bedside\" approach. Our Translational Medicine Day Committee hopes to showcase this amazing field that calls upon knowledge from different regions of S.T.E.M. to the UC San Diego community!",
+      "related_events": ["transmed"],
+      "related_programs": [],
       "resources": []
     },
-    "mediatech": {
-      "name": "Media and Technology",
-      "officers": [
-        "Austin Lefebvre"
-      ],
-      "meetTime": "Thursdays at 8:00pm",
+    "freshman": {
+      "name": "Freshman",
+      "officers": {
+        "Tong Jin":"/content.html"
+      },
+      "meetTime": "Mondays at 7:00pm",
       "meetLoc": "PFBH 291",
-      "pageUrl": "/committees/mtech.html",
+      "pageUrl": "/committees/freshman.html",
       "imageUrl": "/images/mtech.jpg",
       "description": "",
-      "related_events": [],
+      "related_events": ["bengexp"],
+      "related_programs": [],
       "resources": []
     }
   },
   "events": {
     "beday": {
       "name": "Bioengineering Day",
-      "setting": "May 19th, 2016 at The BIOCOM Institute",
+      "setting": "April 21st from 8:00am - 5:00pm in the Telemedicine Building in the UCSD School of Medicine",
       "info": "Bioengineering Day (BE Day) is a unique forum for networking between our industrial partners and the bioengineering community at UC San Diego. This undergraduate and graduate research symposia celebrates the accomplishments of our students, and provides opportunities for collaboration between them and fellow members from local industry, department alumni, or academia.",
       "pageUrl": "/events/beday.html",
-      "imageUrl": "/images/beday1.jpg"
+      "imageUrl": "/images/beday1.jpg",
+      "link": "https://beday17.eventbrite.com",
+      "schedule": [
+          ["8:00a-9:00","Registration and Breakfast"],
+          ["9:00a - 9:30a","Welcoming Ceremony"],
+          ["9:30a - 10:00a","Keynote Address"],
+          ["10:00a - 10:45a","Senior Design Poster Session I"],
+          ["10:50a - 11:50p","Research Seminars"],
+          ["12:00p - 1:00p","Lunch"],
+          ["1:00p - 2:00p","Demos"],
+          ["2:00p - 3:00p","Diversity Panel"],
+          ["3:15p - 3:55p","Senior Design Poster Session II"],
+          ["4:00p - 4:45p","Quiz Bowl: Final Showdown"],
+          ["4:45p - 5:00p","Closing Ceremony"]
+      ]
     },
     "labexpo": {
       "name": "Lab Expo",
-      "setting": "January 15th, 2016 in Price Center Ballroom East",
+      "setting": "January 20th 10AM - 5PM in PC Ballroom East",
       "info": "This event is designed to be similar to a career fair, except that the representatives tabling at the event range from undergraduate to graduate students and professors from labs on campus. Lab Expo provides undergraduate students a chance to not only see some of the research taking place across campus, but also get involved by joining a laboratory or learning more about on-going projects. It acts as a stepping stone into the world of both industrial and academic research!",
       "pageUrl": "/events/labexpo.html",
-      "imageUrl": "/images/labexpo1.jpg"
+      "imageUrl": "/images/labexpo1.jpg",
+      "link": "https://docs.google.com/forms/d/e/1FAIpQLSdE7OddZTBNmj93HTaUH9MOlOzFGgTRwLp9VAjFagQm98dL8w/viewform?c=0&w=1",
+      "schedule": [
+          ["10:00a","Doors Open"],
+          ["10:00a - 10:30a","Keynote Address"],
+          ["10:30a - 12:00a","Session I"],
+          ["12:00a - 12:30a","Lunch Intermission and Rearrangement"],
+          ["12:45a - 2:30p","Session II"],
+          ["2:30p - 3:00p","Intermission"],
+          ["3:00p - 5:00p","Session III"]
+      ]
     },
     "beinspired": {
       "name": "BE Inspired",
@@ -129,24 +160,213 @@
     },
     "transmed": {
       "name": "Translational Medicine Day",
-      "setting": "April 23rd, 2016 at the Sanford Consortium",
+      "setting": "March 10th from 2:30 - 7:00 PM in the Telemedicine Building in the School of Medicine",
       "info": "Translational Medicine Day will bridge the discussions occurring in San Diego’s vibrant and expansive research community with the future of cutting edge healthcare, putting students, professors, and industry together to enhance the heart of this discussion. The event will have speakers, workshops, research labs, and panels that seek to demonstrate the potential of translational research in medicine and also provide undergraduates a look into opportunities to contribute to the field.",
       "pageUrl": "/events/translationalmedicine.html",
-      "imageUrl": "/images/bemed1.jpg"
+      "imageUrl": "/images/bemed1.jpg",
+      "link": "https://tmd2017.eventbrite.com/",
+      "schedule": [
+          ["2:30p - 3:00p", "Registration"],
+          ["3:00p - 4:00p", "Keynote Address"],
+          ["4:00p - 4:30p", "Session I: MD/PhD Admissions Panel, Speakers, and Center for Future of Surgery Tours"],
+          ["4:45p - 5:15p", "Session II: MD/PhD Research Networking, Industry Device Demonstration, Center for Future of Surgery Tours, and Speakers"],
+          ["5:30p - 6:00p", "Session III: Undergraduate Clinical Bioengineering Research Posters and Speakers"],
+          ["6:00p - 7:00p", "Networking Session"]
+      ]
     },
+    "bengexp": {
+      "name": "The Bioengineering Experience",
+      "setting": "",
+      "info": "",
+      "pageUrl": "/events/bengexp.html",
+      "imageUrl": "/images/bengexp1"
+    }
+  },
+  "programs": {
     "mentor": {
       "name": "Mentorship Program",
       "setting": "",
       "info": "The BMES Mentorship program hopes to promote a sense of community in the Bioengineering Department for both underclassmen and upperclassmen. For many new freshman or transfer students, the new UC San Diego college environment and the Bioengineering department can be overwhelming. The BMES Mentorship Program serves to facilitate this new adjustment by introducing people who share the same academic interests, while helping underclassmen get academic and social advice to guide them through their undergraduate studies.",
       "pageUrl": "/events/mentormentee.html",
       "imageUrl": "/images/mentormentee1.jpg"
-    }
-  },
+    },
+    "xseed": {
+      "name": "BMES xSEED",
+      "setting": "",
+      "info": "Some info here...",
+      "pageUrl": "/PUT URL HERE",
+      "imageUrl": "/PUT URL HERE"
+    },
+    "ptresearch": {
+      "name": "Research Division",
+      "setting": "",
+      "info": "Some info here...",
+      "pageUrl": "/PUT URL HERE",
+      "imageUrl": "/PUT URL HERE"
+    } 
+  }, 
   "resources": {
     "quizbowl": {
       "name": "Quiz Bowl Application",
-      "deadline": "4/8/2016 at 11:59pm",
-      "link": "https://docs.google.com/forms/d/1fKM1c4T7G0nsJCRwmyMrVgGvrmxiMXh90BcAT46FU-Y/viewform"
+      "deadline": "4/8/2017 at 11:59p",
+      "link": "https://goo.gl/forms/6tuF2HsDyXgNNwN32"
+    },
+    "exposignup": {
+      "name": "Lab Expo Registration",
+      "deadline": "1/1/2017",
+      "link": "https://docs.google.com/a/ucsd.edu/forms/d/1CFDhXULKiLjGqIxjMO099-Csdeecmw7rQ4-utLWbD4M/edit"
+    },
+    "mentorsignup": {
+      "name": "Mentorship Program Sign Up",
+      "deadline": "1/13/2017 at 11:59p",
+      "link": "https://docs.google.com/forms/d/e/1FAIpQLSdmVrCx7qylvLZFYVQItT0nMDBxXuW7aUTQMMBpooeAu8bTCg/viewform?c=0&w=1"
+    },
+    "points": {
+      "name": "Mentorship Program Point Tally",
+      "deadline": "",
+      "link": ""
+    }
+  },
+  "officers": {
+    "bryan": {
+      "name": "Bryan Yeh",
+      "title": "Co-President",
+      "email": "bjyeh@ucsd.edu",
+      "desc": "Yo! Thanks for checking us out. My name is Bryan, and I’m one of the Co-Presidents for this year! I’m a 3rd year Bioengineering: Bioinformatics major hailing from Muir college, but I originally come from the far far lands of NorCal. When I have free time (heh, what's that), I enjoy playing video games such as overwatch or league, browsing reddit, and watching anime. When I’m not being a loner, I love grabbing food and hanging out in random locations so hit me up. Feel free to message me for absolutely no reason, if only to make a new friend. I also encourage you to come meet me if you have any ideas or concerns about our club. Hopefully I will see you soon!",
+      "img": "bryan1.jpg"
+    },
+    "alex": {
+      "name": "Alexandra Muise",
+      "title": "Co-President",
+      "email": "amuise@ucsd.edu",
+      "desc": "Hi friends! I'm a 3rd year, Bioengineering: Biotechnology major, and I'm one of the Co-Presidents this year! I'm here to help BMES members grow, and so if you have any ideas or passions you want to share with BMES I would love to hear them! In my spare time, when I'm not working or procrastinating by napping, I also enjoy baking, running, and eating at fun new places. Also, feel free to contact me if you have questions about BMES, worries about college, or want to get off campus to eat real food.",
+      "img": "alex1.jpg"
+    },
+    "eti": {
+      "name": "Eti Sinha",
+      "title": "Vice-President External",
+      "email": "etsinha@ucsd.edu",
+      "desc": "Hey, what’s up?! I’m a third year Bioengineering: Biotechnology major from Revelle College! As your VP External, I’m here to help you with any professional needs, from resume critiques to connecting you to graduate students. In my free time (if I get out of lab early haha), I like to go to the beach and try Convoy restaurants one at a time. You’ll likely see me being (almost) late to meetings as I speed across campus with my bike. Feel free to contact me for anything!",
+      "img": "eti1.jpg"
+    },
+    "prash": {
+      "name": "Prashila Amatya",
+      "title": "Vice-President Internal",
+      "email": "pamatya@ucsd.edu",
+      "desc": "Hi there! My name is Prashila and I'll be serving as the Vice-President Internal for BMES this year! I am a 3rd year Bioengineering: Bioengineering major aspiring to become a doctor, so I am always (or should always be) studying, but in my occasional free moments I love to listen to music, watch cute puppy videos, and explore the great outdoors. Feel free to message me or visit my office hours with any questions about getting involved in BMES or just to hang out!",
+      "img": "prashila1.jpg"
+    },
+    "chris": {
+      "name": "Christopher Um",
+      "title": "Vice-President Finance",
+      "email": "cjum@ucsd.edu",
+      "desc": "Hey everyone my name is Chris and I'm your capitalist of BMES for this year. I like to eat ramen, Chipotle, breakfast burritos, and sushi rolls because I'm a filthy casual who doesn't eat sashimi. When I'm not busy laundering money I just sit on my bed and do nothing so feel free to ask me anything!",
+      "img": "chris1.jpg"
+    },
+    "alexandria": {
+      "name": "Alexandra Kasper",
+      "title": "Bioengineering Day Chair",
+      "email": "aikasper@ucsd.edu",
+      "desc": "Hi There! My name is Alexandra, and I am a second year transfer in Bioengineering: Biotechnology. I really enjoy trying new foods, going on hikes, and relaxing on the beach. I also go to Disneyland WAY too much, so if you're interested, please feed my addiction and plan a day trip there with me! And if you have any questions about the transfer experience, BE Day, or life in general, feel free to contact me. I love listening to people’s problems and lending a hand!",
+      "img": "alexandra1.jpg"
+    },  
+    "irmak": {
+      "name": "Irmak Ipekci",
+      "title": "Bioengineering Day Chair",
+      "email": "iipekci@ucsd.edu",
+      "desc": "Hey all! I'm a third-year Bioengineering: Biotechnology major in Warren. I'm also an international student from Turkey, which means I go thorough a 13 hour flight binge watching 6 movies 4 times a year (so many numbers). I really enjoy trying out new food, travelling to new places and getting into TV shows. My dream job would be to become a chef or an astronaut - or an astronaut chef. We should hang out sometime!",
+      "img": "irmak1.jpg"
+    },
+      "katherinen": {
+      "name": "Katherine Nguyen",
+      "title": "Lab Expo Chair",
+      "email": "khn001@ucsd.edu",
+      "desc": "Hi all! I'm a 2nd year Bioengineering: Biotechnology major from the far far lands of Revelle college. My favorite color is blue and I absolutely love dogs. I started working in Dr. Chien's lab as a volunteer spring quarter of my freshman year. If you have any questions about anything or you just want a friend to talk to, feel free to talk to me!",
+      "img": "katherinen1.jpg"
+    },
+    "arya": {
+      "name": "Arya Kaul",
+      "title": "Lab Expo Chair",
+      "email": "a1kaul@ucsd.edu",
+      "desc": "Hey guys, I'm Arya. I'm strongly interested in applying a quantitative mindset to biological research interests. Currently working at the La Jolla Institute for Allergy and Immunology on smoothing and quality control measures for new advances in chromosome conformation capture. Other interests include scientific policy and the role of mathematics in explaining life’s complexity!",
+      "img": "arya1.jpg"
+    },
+    "benjy": {
+      "name": "Benjamin Yang",
+      "title": "Project Team Lead",
+      "email": "byang@ucsd.edu",
+      "desc": "Not Available",
+      "img": "benjy1.jpg"
+    },
+    "shoun": {
+      "name": "Shoun Matsuka",
+      "title": "Project Team Lead",
+      "email": "smatsuka@ucsd.edu",
+      "desc": "Hello everyone!  My name is Shoun, and I'm a sophomore in ERC. My special interest is in developing medical devices and integrating the technology and business in biomedical field. I love going to the beach, dancing (bboy/hiphop), watching and playing sports, camping... and eating! Also, I'm an international student from Japan. If you have any questions about BMES Project Team or doing study abroad, just hit me up. I'm always down to meet new people! Peace 🙂",
+      "img": "shoun1.jpg"
+    },
+    "nikki": {
+      "name": "Nikki Chan",
+      "title": "Social Chair",
+      "email": "jdc004@ucsd.edu",
+      "desc": "Hello there! I go by Nikki and am a fourth year Bioengineering: Biotechnology student. When I'm not studying or working, I like going to the beach, hiking, eating copious amounts of food, and taking long drives. I also really enjoy meeting new people, so don't be shy to strike up a conversation with me. If you have questions about BMES, UCSD student life, or what else there is to do in San Diego, feel free to reach out and message me!",
+      "img": "nikki1.jpg"
+    },
+    "kathy": {
+      "name": "Kathryn Kang",
+      "title": "Social Chair",
+      "email": "k5kang@eng.ucsd.edu",
+      "desc": "Hi friends! I'm a third year Bioengineering: Bioengineering student in Muir college. Despite being a San Diego native, I know embarrassingly little about this place, so in my free time, I enjoy finding new restaurants, going to concerts, and wandering with friends. I'm always on the look out for new food/music/book/etc recommendations! Feel free to contact me about BMES, school, or life in general. Cheers!",
+      "img": "kathy1.jpg"
+    },
+    "katherinel": {
+      "name": "Katherine Lowe",
+      "title": "Outreach Chair",
+      "email": "k2lowe@ucsd.edu",
+      "desc": "Hi! I’m Katherine, and I’m a second year Bioengineering major in Warren College. I come all the way from Maryland, so if you’re from the East Coast, let me know! You can probably find me eating sambusas at the farmer’s market that happens every week on campus. Please feel free to talk to me about Outreach and anything you want!",
+      "img": "katherinel1.jpg"
+    },  
+    "juhi": {
+      "name": "Juhi Madan",
+      "title": "Outreach Chair",
+      "email": "jmadan@ucsd.edu",
+      "desc": "Hey! My name is Juhi Madan and I will be one of your Outreach Chairs this year! I am a second year Bioengineering: Bioengineering major from Revelle college. In my free time, I like watching friends, dancing, hiking, sleeping, playing golf, and scrolling aimlessly through my Facebook feed (no shame). Don’t hesitate to hit me up if you have any questions or if you just want to hang out!",
+      "img": "juhi1.jpg"
+    },  
+    "yajur": {
+      "name": "Yajur Maker",
+      "title": "Translational Medicine Day Chair",
+      "email": "ymaker@ucsd.edu",
+      "desc": "As a 4th year Bioengineer, I am focused on translating my research interests into innovative medical technologies. To do this, I focus on creating low cost medical devices in the Engineering World Health organization, work on mimicking bone structure in the McKittrick Biomaterials Lab, and have helped to start Translational Medicine Day to inspire undergraduate students to pursue Translational Medicine. In my free time I also enjoy food and beer. Let's not forget beer.",
+      "img": "yajur1.jpg"
+    },
+    "reysha": {
+      "name": "Reysha Patel",
+      "title": "Translational Medicine Day Chair",
+      "email": "rep002@ucsd.edu",
+      "desc": "Hello! I am a second year Bioengineering: Bioinformatics major from Marshall. As a Translational Medicine Day Co-chair this year, I am excited to display and explore the bridges between medicine and other STEM fields. I love listening to new music and trying new foods in my free time. Feel free to contact me with any questions or if you just want to talk!",
+      "img": "reysha1.jpg"
+    },
+    "tong": {
+      "name": "Tong Jin",
+      "title": "Freshman Representative",
+      "email": "t8jin@ucsd.edu",
+      "desc": "Not Available",
+      "img": "tong1.jpg"
+    },
+    "jv": {
+      "name": "John Vincent",
+      "title": "Historian",
+      "email": "jlaxa@ucsd.edu",
+      "desc": "My name is John Vincent, but I usually go by JV, and I'm a sophomore at UCSD studying bioinformatics. My academic interests are primarily in anything cancer-related, robot-related, and things that can cause explosions of some kind. I'm a swimmer, martial artist, gamer, musician, cook, graphic designer, and sarcasm connoisseur. If you have any questions about BMES, I'll try, but I'm probably better at answering anything Publicity/Design related. I'm traught to meet you, so I hope I can whelm you with my help. Feel the aster!",
+      "img": "jv1.jpg"
+    },
+    "lucas": {
+      "name": "Lucas Patel",
+      "title": "Webmaster",
+      "email": "lpatel@ucsd.edu",
+      "desc": "Hey guys! I'm Lucas, your Webmaster for the year. I'm a second year Biology: Bioinformatics major from Warren College. When I'm not busy (or working on the website) I love listening and playing music, taking photos, eating food, and exploring. Feel free to talk to me about anytime about anything!",
+      "img": "lucas1.jpg"
     }
   }
 }

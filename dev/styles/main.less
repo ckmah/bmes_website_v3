@@ -98,6 +98,7 @@ GENERAL FORMATTING
     }
     .dropdown-toggle .caret {
       opacity: 0.2;
+      z-index: 1;
       .ease-out-cubic;
     }
     &:hover {
@@ -143,6 +144,20 @@ body {
   background-size: cover;
   background-repeat: repeat;
   background-position: center;
+}
+
+//messy CSS here, carousel needs work
+#event-carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  margin-top: @navbarHeight;
+  padding: 0;
+  height: calc(~"80vh - @{navbarHeight}");
+  overflow: visible;
 }
 
 // INTRO TEXT

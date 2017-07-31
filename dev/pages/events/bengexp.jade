@@ -1,0 +1,76 @@
+extends /dev/layouts/event_subpages
+
+block title
+    title The Bioengineering Experience - BMES | UCSD
+
+append vars
+  - var ev = content.events.bengexp //should be more OO
+
+  append styles
+  link(rel='stylesheet', type='text/css', href='/css/events/bengexp.css')  
+
+block eventintro
+  .row
+    .col-md-12
+      hr
+      h3(style='text-align: center') About
+      hr
+      h5
+        | The Bioengineering Experience !
+        //a(href='link here') linked thing here
+      p
+        | 
+      p
+
+block location
+  .row
+    hr
+    h3(style='text-align: center') Location
+    hr
+    .col-md-6
+      .img-container
+        img.img-responsive(src='/images/pc.jpg')
+    .col-md-6
+      h5
+        | This year's event will be held in PC Ballroom East
+        a(href='http://www.pcballroom.org/') 
+        | , a central venue on the University of California, San Diego campus.
+      br
+
+//block schedule
+//event schedule
+//.row
+//hr
+//h3(style='text-align: center') Event Schedule
+//hr
+//+schedule(ev)
+ 
+block pagebubbles
+  //links
+  .row
+  hr
+  div(style='text-align: center')
+    a.register-bubble(href='/comingsoon.html', target='_blank') REGISTER NOW
+    a.register-bubble(href='/comingsoon.html', target='_blank') BECOME A SPONSOR
+    a.register-bubble(href='/comingsoon.html', target='_blank') VOLUNTEER
+  hr
+
+block contact
+  // contact area
+  .row
+    h3(style='text-align: center') Contact
+    h5(style='text-align: center')
+      | If you have any questions about the event, feel free to contact our planning chair!
+    // officer 1
+    .col-md-12
+      .officer.col-xs-12
+        .img-container.col-md-2
+        .img-container.col-md-8.col-xs-12
+          img.img-responsive(src='/images/officers/tong1.jpg')
+        .img-container.col-md-2
+        .officer-info.col-md-12.col-xs-12
+          h5(style='text-align: center') Tong Jin
+          h5(style='text-align: center')
+            a(href='mailto:t8jin@ucsd.edu') t8jin@ucsd.edu
+    br
+    // end officer contact

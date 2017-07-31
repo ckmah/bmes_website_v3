@@ -1,0 +1,15 @@
+extends /dev/layouts/committee_subpages
+
+block title
+    title Project Team Committee - BMES | UCSD
+
+append styles
+  link(rel='stylesheet', type='text/css', href='/css/committees/projectteam.css')
+
+append vars
+  - var comm = content.committees.projectteam
+  - var bgUrl = comm.imageUrl
+  - var bubbles = comm.officers
+  - var title = "Project Team Committee"
+  - var subtitle = ''
+  - var maintext = ''

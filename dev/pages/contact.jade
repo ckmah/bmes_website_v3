@@ -1,0 +1,25 @@
+extends /dev/layouts/default
+include /dev/mixins/mixins
+
+block title
+  title Contact - BMES | UCSD
+
+append styles
+  link(rel='stylesheet', type='text/css', href='/css/contact.css')
+  link(rel='stylesheet', type='text/css', href='/css/contact/officers.css')
+    
+
+append vars
+  - var title = 'Contact'
+  - var subtitle = 'Send us a message!'
+  - var maintext = ''
+  - var bgUrl = '/images/cover1.jpg'
+  - var bubbles = {"Email":"mailto:bmes.ucsandiego@gmail.com", "Facebook Page":"https://www.facebook.com/groups/UCSDBMES1617/?fref=nf"}
+
+block intro
+  include ../partials/jumbotron
+
+block content
+  .content-inner
+    for officer in content.officers
+      +officer-card(officer)

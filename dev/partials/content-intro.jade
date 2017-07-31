@@ -3,20 +3,11 @@ block vars
   - var title = 'Title'
   - var subtitle = 'Subtitle'
   - var maintext = 'Main text'
-  - var bgUrl = '/images'
-  //- bubbles key = label, value = href
+  - var bgUrl = '/images/cover.jpg'
+  //- bubbles key = text, value = href
   - var bubbles = {}
 
-#intro.jumbotron(style="background-image: url('/images/overlay.png'), url('#{bgUrl}');")
-  #intro-text.container
-    h1 #{title}
-    h4 #{subtitle}
-    br
-    each label, link in bubbles
-      a.officer-bubble(href='#{link}', target='_blank') #{label}
-    p#main-text #{maintext}
-  a#scroll-next(data-scroll='', href='#content')
-    span.glyphicon.glyphicon-chevron-down
+block intro
 
 #content
   .container

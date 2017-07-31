@@ -1,0 +1,24 @@
+extends /dev/layouts/default
+include /dev/mixins/mixins
+
+append styles
+  link(rel='stylesheet', type='text/css', href='/css/events_subpages.css')
+  link(rel='stylesheet', type='text/css', href='/css/events_bmes.css')
+
+append vars
+  - var title = 'Title'
+  - var subtitle = 'Subtitle'
+  - var maintext = 'Main text'
+  - var bgUrl = '/images/cover.jpg'
+  - var button = 'REGISTER NOW'
+  - var ev = content.events.labexpo //should be more OO
+
+block intro
+  include ../partials/carousel
+
+block content
+  block eventintro
+  block location
+  block schedule
+  block pagebubbles
+  block contact

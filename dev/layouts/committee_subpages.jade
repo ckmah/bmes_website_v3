@@ -5,8 +5,13 @@ append styles
   link(rel='stylesheet', type='text/css', href='/css/committee_subpages.css')
 
 append vars
-    - var comm = content.committees.beday
-    - var bgUrl = comm.imageUrl
+  - var title = 'Title'
+  - var subtitle = 'Subtitle'
+  - var maintext = 'Main text'
+  - var comm = content.committees.beday //should be more OO
+
+block intro
+  include ../partials/jumbotron
 
 block content
     .well
@@ -16,10 +21,12 @@ block content
       p #{comm.description}
     .related-events.col-xs-12
         for event in comm.related_events
-            +related-event-card(event)
+           +related-event-card(event)
+        for program in comm.related_programs
+            +related-program-card(program)
     .row.row-custom
     .application-links
-      h3 Resources
+      h3 Resources and more
       p
         | All related documents, applications, forms, and surveys to this committee can be found in this section.
       // row
